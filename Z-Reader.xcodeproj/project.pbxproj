@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F6980D4BAD0FBD8CC283A2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D28C41C635B6E1B8F0C2ED2 /* libPods.a */; };
+		66236A201C4B8945005301AB /* HotWordHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66236A1E1C4B8945005301AB /* HotWordHeaderView.m */; };
+		66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A1F1C4B8945005301AB /* HotWordHeaderView.xib */; };
+		66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66236A231C4B89AE005301AB /* KeyWordViewCell.m */; };
+		66236A261C4B89AE005301AB /* KeyWordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A241C4B89AE005301AB /* KeyWordViewCell.xib */; };
 		666931E61C47CFAD0056F7BC /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E51C47CFAD0056F7BC /* KeyWordViewController.m */; };
-		666931EA1C4939100056F7BC /* HotWordHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E81C4939100056F7BC /* HotWordHeaderView.m */; };
-		666931EB1C4939100056F7BC /* HotWordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666931E91C4939100056F7BC /* HotWordHeaderView.xib */; };
 		666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */; };
 		66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */; };
 		66A5AA431C45264C00FA824C /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA421C45264C00FA824C /* BookManager.m */; };
@@ -67,11 +69,15 @@
 		076B932D0EB5758D5496283A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2FA4591FCD2E1BDFD35E40FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D28C41C635B6E1B8F0C2ED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		66236A1D1C4B8945005301AB /* HotWordHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordHeaderView.h; sourceTree = "<group>"; };
+		66236A1E1C4B8945005301AB /* HotWordHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordHeaderView.m; sourceTree = "<group>"; };
+		66236A1F1C4B8945005301AB /* HotWordHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotWordHeaderView.xib; sourceTree = "<group>"; };
+		66236A221C4B89AE005301AB /* KeyWordViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyWordViewCell.h; sourceTree = "<group>"; };
+		66236A231C4B89AE005301AB /* KeyWordViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewCell.m; sourceTree = "<group>"; };
+		66236A241C4B89AE005301AB /* KeyWordViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyWordViewCell.xib; sourceTree = "<group>"; };
+		66236A2A1C4BBB09005301AB /* UtilityDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilityDefine.h; sourceTree = "<group>"; };
 		666931E41C47CFAD0056F7BC /* KeyWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyWordViewController.h; path = "Z-Reader/Controllers/KeyWordViewController.h"; sourceTree = SOURCE_ROOT; };
 		666931E51C47CFAD0056F7BC /* KeyWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyWordViewController.m; path = "Z-Reader/Controllers/KeyWordViewController.m"; sourceTree = SOURCE_ROOT; };
-		666931E71C4939100056F7BC /* HotWordHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordHeaderView.h; sourceTree = "<group>"; };
-		666931E81C4939100056F7BC /* HotWordHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordHeaderView.m; sourceTree = "<group>"; };
-		666931E91C4939100056F7BC /* HotWordHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotWordHeaderView.xib; sourceTree = "<group>"; };
 		666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Z.h"; sourceTree = "<group>"; };
 		666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Z.m"; sourceTree = "<group>"; };
 		66A5A9ED1C438E5300FA824C /* LoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCell.h; sourceTree = "<group>"; };
@@ -172,6 +178,19 @@
 				2FA4591FCD2E1BDFD35E40FF /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		66236A1C1C4B890F005301AB /* KeyWord */ = {
+			isa = PBXGroup;
+			children = (
+				66236A1D1C4B8945005301AB /* HotWordHeaderView.h */,
+				66236A1E1C4B8945005301AB /* HotWordHeaderView.m */,
+				66236A1F1C4B8945005301AB /* HotWordHeaderView.xib */,
+				66236A221C4B89AE005301AB /* KeyWordViewCell.h */,
+				66236A231C4B89AE005301AB /* KeyWordViewCell.m */,
+				66236A241C4B89AE005301AB /* KeyWordViewCell.xib */,
+			);
+			path = KeyWord;
 			sourceTree = "<group>";
 		};
 		66A5AA441C45563B00FA824C /* BookDetail */ = {
@@ -287,18 +306,19 @@
 			isa = PBXGroup;
 			children = (
 				66A5AA441C45563B00FA824C /* BookDetail */,
-				66BF71C21C40051800987729 /* BookRack */,
+				66BF71C21C40051800987729 /* Bookrack */,
 				66BF71C51C40051800987729 /* Search */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		66BF71C21C40051800987729 /* BookRack */ = {
+		66BF71C21C40051800987729 /* Bookrack */ = {
 			isa = PBXGroup;
 			children = (
 				66BF71C31C40051800987729 /* BookrackViewController.h */,
 				66BF71C41C40051800987729 /* BookrackViewController.m */,
 			);
+			name = Bookrack;
 			path = BookRack;
 			sourceTree = "<group>";
 		};
@@ -342,6 +362,7 @@
 				66A5A9F21C43949700FA824C /* ThemeDelegate.h */,
 				66A5AA411C45264C00FA824C /* BookManager.h */,
 				66A5AA421C45264C00FA824C /* BookManager.m */,
+				66236A2A1C4BBB09005301AB /* UtilityDefine.h */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -349,15 +370,13 @@
 		66BF71EC1C40051800987729 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				66236A1C1C4B890F005301AB /* KeyWord */,
 				66A5AA491C46765300FA824C /* Bookrack */,
 				66BF71EF1C40051800987729 /* Search */,
 				66BF71ED1C40051800987729 /* LoadingView.h */,
 				66BF71EE1C40051800987729 /* LoadingView.m */,
 				66A5A9ED1C438E5300FA824C /* LoadMoreTableViewCell.h */,
 				66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */,
-				666931E71C4939100056F7BC /* HotWordHeaderView.h */,
-				666931E81C4939100056F7BC /* HotWordHeaderView.m */,
-				666931E91C4939100056F7BC /* HotWordHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -487,10 +506,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				66BF71941C40036A00987729 /* LaunchScreen.storyboard in Resources */,
+				66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */,
 				66A5AA4E1C46768000FA824C /* BookrackCell.xib in Resources */,
 				66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */,
+				66236A261C4B89AE005301AB /* KeyWordViewCell.xib in Resources */,
 				66BF72101C40052F00987729 /* Theme in Resources */,
-				666931EB1C4939100056F7BC /* HotWordHeaderView.xib in Resources */,
 				66BF71911C40036A00987729 /* Assets.xcassets in Resources */,
 				66BF718F1C40036A00987729 /* Main.storyboard in Resources */,
 			);
@@ -574,8 +594,10 @@
 				66BF71FE1C40051800987729 /* NovelCellView.m in Sources */,
 				66A5AA4D1C46768000FA824C /* BookrackCell.m in Sources */,
 				66BF71FF1C40051800987729 /* NovelInfo.m in Sources */,
+				66236A201C4B8945005301AB /* HotWordHeaderView.m in Sources */,
 				66BF72011C40051800987729 /* UserSetting.m in Sources */,
 				66A5AA431C45264C00FA824C /* BookManager.m in Sources */,
+				66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */,
 				66BF71F61C40051800987729 /* UITableView+Z.m in Sources */,
 				66BF71891C40036A00987729 /* AppDelegate.m in Sources */,
 				66BF71FC1C40051800987729 /* BaseSetting.m in Sources */,
@@ -586,7 +608,6 @@
 				66BF72001C40051800987729 /* SearchNovelResponse.m in Sources */,
 				66BF720C1C40051800987729 /* LoadingView.m in Sources */,
 				66BF71FA1C40051800987729 /* SearchViewController.m in Sources */,
-				666931EA1C4939100056F7BC /* HotWordHeaderView.m in Sources */,
 				66BF71F71C40051800987729 /* BookrackViewController.m in Sources */,
 				666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */,
 				66BF71861C40036A00987729 /* main.m in Sources */,

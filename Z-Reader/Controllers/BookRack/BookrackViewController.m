@@ -24,13 +24,15 @@
     [btnSearch addTarget:self action:@selector(searchBtn_Click:) forControlEvents:UIControlEventTouchUpInside];
     NSMutableArray<UIBarButtonItem*> *btnArray=[[NSMutableArray new]init];
     [btnArray addObject:[[UIBarButtonItem new]initWithCustomView:btnSearch]];
-    self.navigationItem.rightBarButtonItems=[btnArray copy];
+    this.navigationItem.rightBarButtonItems=[btnArray copy];
    
     [self.bookListView registerNibClass:[BookrackCell class] withCellIdentifier:cellReuseIdentifier];
     self.bookListView.delegate=self;
     self.bookListView.dataSource=self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addBook) name:AddBookNotifier object:nil];
-    [super viewDidLoad];
+    
+    
+    [super viewDidLoad]; 
 }
 -(void)addBook{
     [self.bookListView reloadData];

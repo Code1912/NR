@@ -44,6 +44,9 @@
     va_end(args);
     return str;
 }
-
+-(NSString *) concat:(NSString *)str
+{
+    return [NSString stringWithFormat:@"%@%@",self,str];
+}
  
 @end

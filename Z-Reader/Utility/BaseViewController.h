@@ -19,6 +19,7 @@
 #import "HotWordResponse.h"
 #import "SearchNovelResponse.h"
 #import "BookManager.h"
+#import "UtilityDefine.h"
 @interface BaseViewController : UIViewController
 {
    

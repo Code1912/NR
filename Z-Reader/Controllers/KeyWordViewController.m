@@ -25,7 +25,7 @@
   
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.headerReferenceSize = CGSizeMake(_rootView.frame.size.width ,50.0f);  //设置head大小
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellReuseIdentifier];
+    [_collectionView registerNibClass:[KeyWordViewCell class] withCellIdentifier:cellReuseIdentifier ];
     [_collectionView registerNibClass:[HotWordHeaderView class] withHeaderIdentifier:headerReuseIdentifier];
     _collectionView.dataSource=self;
     _collectionView.delegate=self;
@@ -100,6 +100,10 @@
 }
 -(void)doSearch
 {
+    if([txtSearch.text isNullOrWhiteSpaceEmpty])
+    {
+        return;
+    }
     WordEntity *item=[searchHistoryList findItem:^BOOL(WordEntity *item) {
         return [item.word isEqualToString:[txtSearch.text trim]];
     }];
@@ -115,6 +119,7 @@
     else
     {
         item.dateTime=[NSDate new];
+        [item saveToDB];
     }
     [self loadSearchHistory];
     [_collectionView reloadData];
@@ -210,24 +215,42 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
-  //  NSLog(@"cell children count:%d",cell.contentView.subviews.count);
-    if(cell.contentView.subviews.count>0)
-    {
-        WordEntity *info=[indexPath.section==0?searchHistoryList:hotWordList objectAtIndex:indexPath.row];
-        UILabel *label=(UILabel *)[cell.contentView.subviews objectAtIndex:0];
-        label.text =  info.word ;
-        
-        return  cell;
+    KeyWordViewCell *cell = (KeyWordViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
+    WordEntity *entity=[indexPath.section==0?searchHistoryList:hotWordList objectAtIndex:indexPath.row];
+    if (indexPath.section==0) {
+        cell.labelTitle.text=entity.word;
+        cell.labelTitle.textAlignment=NSTextAlignmentCenter;
     }
-     WordEntity *entity=[indexPath.section==0?searchHistoryList:hotWordList objectAtIndex:indexPath.row];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
-    label.textAlignment=NSTextAlignmentCenter;
-    label.text =  entity.word ;
-    label.backgroundColor= [[UIColor new]initWithRed:240./255.0 green:240.0/255.0  blue:240.0/255.0  alpha:1];;
-    label.textColor=[UserSetting getIntance].titleColor;
-    label.font=[UIFont systemFontOfSize:11 weight:11];
-    [cell.contentView addSubview:label];
+    else
+    {
+        cell.labelTitle.text = [@"\t    " concat:entity.word];
+        cell.labelTitle.textAlignment=NSTextAlignmentLeft;
+        cell.labelNumber.text= [NSString stringWithFormat: @"%ld", indexPath.row+1];
+        
+        if(indexPath.row==0)
+        {
+            cell.labelNumber.backgroundColor=MakeUIColor(239, 101, 101,1);
+        }
+        else if(indexPath.row==1)
+        {
+            cell.labelNumber.backgroundColor=MakeUIColor(241, 131, 59,1);
+        }
+        else if(indexPath.row==2)
+        {
+            cell.labelNumber.backgroundColor=MakeUIColor(255, 191, 20,1);
+        }
+        else
+        {
+            cell.labelNumber.backgroundColor=MakeUIColor(179, 179, 179,1);
+        }
+    }
+ 
+ 
+    cell.labelTitle.backgroundColor= [[UIColor new]initWithRed:240./255.0 green:240.0/255.0  blue:240.0/255.0  alpha:1];;
+    cell.labelTitle.textColor=[UserSetting getIntance].titleColor;
+    cell.labelTitle.font=[UIFont systemFontOfSize:11 weight:11];
+    cell.labelNumber.hidden=(indexPath.section==0);
+   
     return cell;
 }
 

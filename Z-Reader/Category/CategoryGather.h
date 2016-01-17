@@ -5,8 +5,8 @@
 //  Created by Code on 16/1/5.
 //  Copyright © 2016年 Code. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "NSString+Z.h"
 #import "UIImage+Z.h"
 #import "UINavigationBar+Z.h"

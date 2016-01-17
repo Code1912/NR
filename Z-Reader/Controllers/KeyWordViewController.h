@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "KeyWordViewCell.h"
 @interface KeyWordViewController : BaseViewController<ASIHTTPRequestDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) IBOutlet UIView *rootView;

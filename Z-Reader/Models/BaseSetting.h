@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 //pn=x; x=1、2、3、4
-static  NSString* const _Nonnull  GetHotWordUrl=@"http://dushu.baidu.com/ajax/search?pn=%d";
+static  NSString* const _Nonnull  GetHotWordUrl=@"http://dushu.baidu.com/ajax/search?pn=%ld";
 //word=%@  word=要查询的关键字  pn=pageNumber
-static   NSString* const _Nonnull   SearchNovelUrl=@"http://dushu.baidu.com/ajax/searchresult?word=%@&pn=%d";
+static   NSString* const _Nonnull   SearchNovelUrl=@"http://dushu.baidu.com/ajax/searchresult?word=%@&pn=%ld";
 
 //http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=4&id=wisenovel&pi=2&order=asc&gid=1786047843
 // pi=%d 表示页数  gid=%ld 小说的id

@@ -15,4 +15,5 @@
 +(NSString *) format:(NSString*)format,...;
 -(NSURL*) toURL;
 -(NSURL*) toEncodeURL;
+-(NSString *) concat:(NSString *)str;
 @end
