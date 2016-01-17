@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6980D4BAD0FBD8CC283A2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D28C41C635B6E1B8F0C2ED2 /* libPods.a */; };
+		666931E61C47CFAD0056F7BC /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E51C47CFAD0056F7BC /* KeyWordViewController.m */; };
+		666931EA1C4939100056F7BC /* HotWordHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E81C4939100056F7BC /* HotWordHeaderView.m */; };
+		666931EB1C4939100056F7BC /* HotWordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666931E91C4939100056F7BC /* HotWordHeaderView.xib */; };
+		666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */; };
+		66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */; };
+		66A5AA431C45264C00FA824C /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA421C45264C00FA824C /* BookManager.m */; };
+		66A5AA471C45565800FA824C /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA461C45565800FA824C /* BookDetailViewController.m */; };
+		66A5AA4D1C46768000FA824C /* BookrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA4B1C46768000FA824C /* BookrackCell.m */; };
+		66A5AA4E1C46768000FA824C /* BookrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A5AA4C1C46768000FA824C /* BookrackCell.xib */; };
+		66A5AA511C46822D00FA824C /* UICollectionView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA501C46822D00FA824C /* UICollectionView+Z.m */; };
 		66BF71861C40036A00987729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71851C40036A00987729 /* main.m */; };
 		66BF71891C40036A00987729 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71881C40036A00987729 /* AppDelegate.m */; };
 		66BF718C1C40036A00987729 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF718B1C40036A00987729 /* ViewController.m */; };
@@ -15,6 +26,25 @@
 		66BF71941C40036A00987729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BF71921C40036A00987729 /* LaunchScreen.storyboard */; };
 		66BF719F1C40036A00987729 /* Z_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF719E1C40036A00987729 /* Z_ReaderTests.m */; };
 		66BF71AA1C40036A00987729 /* Z_ReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71A91C40036A00987729 /* Z_ReaderUITests.m */; };
+		66BF71F31C40051800987729 /* NSString+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71BA1C40051800987729 /* NSString+Z.m */; };
+		66BF71F41C40051800987729 /* UIImage+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71BC1C40051800987729 /* UIImage+Z.m */; };
+		66BF71F51C40051800987729 /* UINavigationBar+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71BE1C40051800987729 /* UINavigationBar+Z.m */; };
+		66BF71F61C40051800987729 /* UITableView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C01C40051800987729 /* UITableView+Z.m */; };
+		66BF71F71C40051800987729 /* BookrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C41C40051800987729 /* BookrackViewController.m */; };
+		66BF71F91C40051800987729 /* SearchListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C91C40051800987729 /* SearchListViewModel.m */; };
+		66BF71FA1C40051800987729 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71CB1C40051800987729 /* SearchViewController.m */; };
+		66BF71FC1C40051800987729 /* BaseSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D01C40051800987729 /* BaseSetting.m */; };
+		66BF71FD1C40051800987729 /* HotWordResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D21C40051800987729 /* HotWordResponse.m */; };
+		66BF71FE1C40051800987729 /* NovelCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D41C40051800987729 /* NovelCellView.m */; };
+		66BF71FF1C40051800987729 /* NovelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D61C40051800987729 /* NovelInfo.m */; };
+		66BF72001C40051800987729 /* SearchNovelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D81C40051800987729 /* SearchNovelResponse.m */; };
+		66BF72011C40051800987729 /* UserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71DA1C40051800987729 /* UserSetting.m */; };
+		66BF72021C40051800987729 /* WordEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71DC1C40051800987729 /* WordEntity.m */; };
+		66BF720A1C40051800987729 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71E91C40051800987729 /* BaseViewController.m */; };
+		66BF720C1C40051800987729 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71EE1C40051800987729 /* LoadingView.m */; };
+		66BF720D1C40051800987729 /* SearchTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71F11C40051800987729 /* SearchTableCellView.m */; };
+		66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BF71F21C40051800987729 /* SearchTableCellView.xib */; };
+		66BF72101C40052F00987729 /* Theme in Resources */ = {isa = PBXBuildFile; fileRef = 66BF720F1C40052F00987729 /* Theme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +65,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		076B932D0EB5758D5496283A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2FA4591FCD2E1BDFD35E40FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4D28C41C635B6E1B8F0C2ED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		666931E41C47CFAD0056F7BC /* KeyWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyWordViewController.h; path = "Z-Reader/Controllers/KeyWordViewController.h"; sourceTree = SOURCE_ROOT; };
+		666931E51C47CFAD0056F7BC /* KeyWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyWordViewController.m; path = "Z-Reader/Controllers/KeyWordViewController.m"; sourceTree = SOURCE_ROOT; };
+		666931E71C4939100056F7BC /* HotWordHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordHeaderView.h; sourceTree = "<group>"; };
+		666931E81C4939100056F7BC /* HotWordHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordHeaderView.m; sourceTree = "<group>"; };
+		666931E91C4939100056F7BC /* HotWordHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotWordHeaderView.xib; sourceTree = "<group>"; };
+		666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Z.h"; sourceTree = "<group>"; };
+		666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Z.m"; sourceTree = "<group>"; };
+		66A5A9ED1C438E5300FA824C /* LoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCell.h; sourceTree = "<group>"; };
+		66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableViewCell.m; sourceTree = "<group>"; };
+		66A5A9F21C43949700FA824C /* ThemeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDelegate.h; sourceTree = "<group>"; };
+		66A5AA411C45264C00FA824C /* BookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
+		66A5AA421C45264C00FA824C /* BookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
+		66A5AA451C45565800FA824C /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		66A5AA461C45565800FA824C /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		66A5AA4A1C46768000FA824C /* BookrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookrackCell.h; sourceTree = "<group>"; };
+		66A5AA4B1C46768000FA824C /* BookrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookrackCell.m; sourceTree = "<group>"; };
+		66A5AA4C1C46768000FA824C /* BookrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookrackCell.xib; sourceTree = "<group>"; };
+		66A5AA4F1C46822D00FA824C /* UICollectionView+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Z.h"; sourceTree = "<group>"; };
+		66A5AA501C46822D00FA824C /* UICollectionView+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Z.m"; sourceTree = "<group>"; };
 		66BF71811C40036A00987729 /* Z-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BF71851C40036A00987729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66BF71871C40036A00987729 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +103,43 @@
 		66BF71A51C40036A00987729 /* Z-ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Z-ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BF71A91C40036A00987729 /* Z_ReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z_ReaderUITests.m; sourceTree = "<group>"; };
 		66BF71AB1C40036A00987729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BF71B81C40051800987729 /* CategoryGather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryGather.h; sourceTree = "<group>"; };
+		66BF71B91C40051800987729 /* NSString+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Z.h"; sourceTree = "<group>"; };
+		66BF71BA1C40051800987729 /* NSString+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Z.m"; sourceTree = "<group>"; };
+		66BF71BB1C40051800987729 /* UIImage+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Z.h"; sourceTree = "<group>"; };
+		66BF71BC1C40051800987729 /* UIImage+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Z.m"; sourceTree = "<group>"; };
+		66BF71BD1C40051800987729 /* UINavigationBar+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Z.h"; sourceTree = "<group>"; };
+		66BF71BE1C40051800987729 /* UINavigationBar+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Z.m"; sourceTree = "<group>"; };
+		66BF71BF1C40051800987729 /* UITableView+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Z.h"; sourceTree = "<group>"; };
+		66BF71C01C40051800987729 /* UITableView+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Z.m"; sourceTree = "<group>"; };
+		66BF71C31C40051800987729 /* BookrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookrackViewController.h; sourceTree = "<group>"; };
+		66BF71C41C40051800987729 /* BookrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookrackViewController.m; sourceTree = "<group>"; };
+		66BF71C81C40051800987729 /* SearchListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListViewModel.h; sourceTree = "<group>"; };
+		66BF71C91C40051800987729 /* SearchListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListViewModel.m; sourceTree = "<group>"; };
+		66BF71CA1C40051800987729 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		66BF71CB1C40051800987729 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		66BF71CF1C40051800987729 /* BaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSetting.h; sourceTree = "<group>"; };
+		66BF71D01C40051800987729 /* BaseSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSetting.m; sourceTree = "<group>"; };
+		66BF71D11C40051800987729 /* HotWordResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordResponse.h; sourceTree = "<group>"; };
+		66BF71D21C40051800987729 /* HotWordResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordResponse.m; sourceTree = "<group>"; };
+		66BF71D31C40051800987729 /* NovelCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovelCellView.h; sourceTree = "<group>"; };
+		66BF71D41C40051800987729 /* NovelCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovelCellView.m; sourceTree = "<group>"; };
+		66BF71D51C40051800987729 /* NovelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovelInfo.h; sourceTree = "<group>"; };
+		66BF71D61C40051800987729 /* NovelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovelInfo.m; sourceTree = "<group>"; };
+		66BF71D71C40051800987729 /* SearchNovelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchNovelResponse.h; sourceTree = "<group>"; };
+		66BF71D81C40051800987729 /* SearchNovelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchNovelResponse.m; sourceTree = "<group>"; };
+		66BF71D91C40051800987729 /* UserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSetting.h; sourceTree = "<group>"; };
+		66BF71DA1C40051800987729 /* UserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSetting.m; sourceTree = "<group>"; };
+		66BF71DB1C40051800987729 /* WordEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordEntity.h; sourceTree = "<group>"; };
+		66BF71DC1C40051800987729 /* WordEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordEntity.m; sourceTree = "<group>"; };
+		66BF71E81C40051800987729 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		66BF71E91C40051800987729 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		66BF71ED1C40051800987729 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		66BF71EE1C40051800987729 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		66BF71F01C40051800987729 /* SearchTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableCellView.h; sourceTree = "<group>"; };
+		66BF71F11C40051800987729 /* SearchTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableCellView.m; sourceTree = "<group>"; };
+		66BF71F21C40051800987729 /* SearchTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableCellView.xib; sourceTree = "<group>"; };
+		66BF720F1C40052F00987729 /* Theme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Theme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6980D4BAD0FBD8CC283A2A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +168,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AE81211DDB6B86293188803 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				076B932D0EB5758D5496283A /* Pods.debug.xcconfig */,
+				2FA4591FCD2E1BDFD35E40FF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66A5AA441C45563B00FA824C /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				66A5AA451C45565800FA824C /* BookDetailViewController.h */,
+				66A5AA461C45565800FA824C /* BookDetailViewController.m */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		66A5AA491C46765300FA824C /* Bookrack */ = {
+			isa = PBXGroup;
+			children = (
+				66A5AA4A1C46768000FA824C /* BookrackCell.h */,
+				66A5AA4B1C46768000FA824C /* BookrackCell.m */,
+				66A5AA4C1C46768000FA824C /* BookrackCell.xib */,
+			);
+			path = Bookrack;
+			sourceTree = "<group>";
+		};
 		66BF71781C40036A00987729 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +203,8 @@
 				66BF719D1C40036A00987729 /* Z-ReaderTests */,
 				66BF71A81C40036A00987729 /* Z-ReaderUITests */,
 				66BF71821C40036A00987729 /* Products */,
+				3AE81211DDB6B86293188803 /* Pods */,
+				B6EFC94833E290CD320F878D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +221,12 @@
 		66BF71831C40036A00987729 /* Z-Reader */ = {
 			isa = PBXGroup;
 			children = (
+				66BF720F1C40052F00987729 /* Theme */,
+				66BF71B71C40051800987729 /* Category */,
+				66BF71C11C40051800987729 /* Controllers */,
+				66BF71CE1C40051800987729 /* Models */,
+				66BF71E71C40051800987729 /* Utility */,
+				66BF71EC1C40051800987729 /* Views */,
 				66BF71871C40036A00987729 /* AppDelegate.h */,
 				66BF71881C40036A00987729 /* AppDelegate.m */,
 				66BF718A1C40036A00987729 /* ViewController.h */,
@@ -140,6 +266,125 @@
 			path = "Z-ReaderUITests";
 			sourceTree = "<group>";
 		};
+		66BF71B71C40051800987729 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71B81C40051800987729 /* CategoryGather.h */,
+				66BF71B91C40051800987729 /* NSString+Z.h */,
+				66BF71BA1C40051800987729 /* NSString+Z.m */,
+				66BF71BB1C40051800987729 /* UIImage+Z.h */,
+				66BF71BC1C40051800987729 /* UIImage+Z.m */,
+				66BF71BD1C40051800987729 /* UINavigationBar+Z.h */,
+				66BF71BE1C40051800987729 /* UINavigationBar+Z.m */,
+				66BF71BF1C40051800987729 /* UITableView+Z.h */,
+				66BF71C01C40051800987729 /* UITableView+Z.m */,
+				66A5AA4F1C46822D00FA824C /* UICollectionView+Z.h */,
+				66A5AA501C46822D00FA824C /* UICollectionView+Z.m */,
+				666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */,
+				666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		66BF71C11C40051800987729 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66A5AA441C45563B00FA824C /* BookDetail */,
+				66BF71C21C40051800987729 /* BookRack */,
+				66BF71C51C40051800987729 /* Search */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		66BF71C21C40051800987729 /* BookRack */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71C31C40051800987729 /* BookrackViewController.h */,
+				66BF71C41C40051800987729 /* BookrackViewController.m */,
+			);
+			path = BookRack;
+			sourceTree = "<group>";
+		};
+		66BF71C51C40051800987729 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71C81C40051800987729 /* SearchListViewModel.h */,
+				66BF71C91C40051800987729 /* SearchListViewModel.m */,
+				66BF71CA1C40051800987729 /* SearchViewController.h */,
+				66BF71CB1C40051800987729 /* SearchViewController.m */,
+				666931E41C47CFAD0056F7BC /* KeyWordViewController.h */,
+				666931E51C47CFAD0056F7BC /* KeyWordViewController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		66BF71CE1C40051800987729 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71CF1C40051800987729 /* BaseSetting.h */,
+				66BF71D01C40051800987729 /* BaseSetting.m */,
+				66BF71D11C40051800987729 /* HotWordResponse.h */,
+				66BF71D21C40051800987729 /* HotWordResponse.m */,
+				66BF71D31C40051800987729 /* NovelCellView.h */,
+				66BF71D41C40051800987729 /* NovelCellView.m */,
+				66BF71D51C40051800987729 /* NovelInfo.h */,
+				66BF71D61C40051800987729 /* NovelInfo.m */,
+				66BF71D71C40051800987729 /* SearchNovelResponse.h */,
+				66BF71D81C40051800987729 /* SearchNovelResponse.m */,
+				66BF71D91C40051800987729 /* UserSetting.h */,
+				66BF71DA1C40051800987729 /* UserSetting.m */,
+				66BF71DB1C40051800987729 /* WordEntity.h */,
+				66BF71DC1C40051800987729 /* WordEntity.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66BF71E71C40051800987729 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71E81C40051800987729 /* BaseViewController.h */,
+				66BF71E91C40051800987729 /* BaseViewController.m */,
+				66A5A9F21C43949700FA824C /* ThemeDelegate.h */,
+				66A5AA411C45264C00FA824C /* BookManager.h */,
+				66A5AA421C45264C00FA824C /* BookManager.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		66BF71EC1C40051800987729 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66A5AA491C46765300FA824C /* Bookrack */,
+				66BF71EF1C40051800987729 /* Search */,
+				66BF71ED1C40051800987729 /* LoadingView.h */,
+				66BF71EE1C40051800987729 /* LoadingView.m */,
+				66A5A9ED1C438E5300FA824C /* LoadMoreTableViewCell.h */,
+				66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */,
+				666931E71C4939100056F7BC /* HotWordHeaderView.h */,
+				666931E81C4939100056F7BC /* HotWordHeaderView.m */,
+				666931E91C4939100056F7BC /* HotWordHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66BF71EF1C40051800987729 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				66BF71F01C40051800987729 /* SearchTableCellView.h */,
+				66BF71F11C40051800987729 /* SearchTableCellView.m */,
+				66BF71F21C40051800987729 /* SearchTableCellView.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B6EFC94833E290CD320F878D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D28C41C635B6E1B8F0C2ED2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66BF71AE1C40036A00987729 /* Build configuration list for PBXNativeTarget "Z-Reader" */;
 			buildPhases = (
+				6FC68EE32CD3DBFD187C416A /* Check Pods Manifest.lock */,
 				66BF717D1C40036A00987729 /* Sources */,
 				66BF717E1C40036A00987729 /* Frameworks */,
 				66BF717F1C40036A00987729 /* Resources */,
+				473C8889B5EF2CEF47FD922A /* Embed Pods Frameworks */,
+				DED02556766F7A5D6AD962FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +492,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66BF71941C40036A00987729 /* LaunchScreen.storyboard in Resources */,
+				66A5AA4E1C46768000FA824C /* BookrackCell.xib in Resources */,
+				66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */,
+				66BF72101C40052F00987729 /* Theme in Resources */,
+				666931EB1C4939100056F7BC /* HotWordHeaderView.xib in Resources */,
 				66BF71911C40036A00987729 /* Assets.xcassets in Resources */,
 				66BF718F1C40036A00987729 /* Main.storyboard in Resources */,
 			);
@@ -265,14 +517,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		473C8889B5EF2CEF47FD922A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC68EE32CD3DBFD187C416A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DED02556766F7A5D6AD962FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66BF717D1C40036A00987729 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BF71F31C40051800987729 /* NSString+Z.m in Sources */,
+				666931E61C47CFAD0056F7BC /* KeyWordViewController.m in Sources */,
+				66BF720A1C40051800987729 /* BaseViewController.m in Sources */,
 				66BF718C1C40036A00987729 /* ViewController.m in Sources */,
+				66A5AA471C45565800FA824C /* BookDetailViewController.m in Sources */,
+				66A5AA511C46822D00FA824C /* UICollectionView+Z.m in Sources */,
+				66BF71F91C40051800987729 /* SearchListViewModel.m in Sources */,
+				66BF71FE1C40051800987729 /* NovelCellView.m in Sources */,
+				66A5AA4D1C46768000FA824C /* BookrackCell.m in Sources */,
+				66BF71FF1C40051800987729 /* NovelInfo.m in Sources */,
+				66BF72011C40051800987729 /* UserSetting.m in Sources */,
+				66A5AA431C45264C00FA824C /* BookManager.m in Sources */,
+				66BF71F61C40051800987729 /* UITableView+Z.m in Sources */,
 				66BF71891C40036A00987729 /* AppDelegate.m in Sources */,
+				66BF71FC1C40051800987729 /* BaseSetting.m in Sources */,
+				66BF71F41C40051800987729 /* UIImage+Z.m in Sources */,
+				66BF71F51C40051800987729 /* UINavigationBar+Z.m in Sources */,
+				66BF71FD1C40051800987729 /* HotWordResponse.m in Sources */,
+				66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */,
+				66BF72001C40051800987729 /* SearchNovelResponse.m in Sources */,
+				66BF720C1C40051800987729 /* LoadingView.m in Sources */,
+				66BF71FA1C40051800987729 /* SearchViewController.m in Sources */,
+				666931EA1C4939100056F7BC /* HotWordHeaderView.m in Sources */,
+				66BF71F71C40051800987729 /* BookrackViewController.m in Sources */,
+				666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */,
 				66BF71861C40036A00987729 /* main.m in Sources */,
+				66BF72021C40051800987729 /* WordEntity.m in Sources */,
+				66BF720D1C40051800987729 /* SearchTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +736,7 @@
 		};
 		66BF71AF1C40036A00987729 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076B932D0EB5758D5496283A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Z-Reader/Info.plist";
@@ -422,6 +748,7 @@
 		};
 		66BF71B01C40036A00987729 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA4591FCD2E1BDFD35E40FF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Z-Reader/Info.plist";
@@ -498,6 +825,7 @@
 				66BF71B01C40036A00987729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66BF71B11C40036A00987729 /* Build configuration list for PBXNativeTarget "Z-ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +834,7 @@
 				66BF71B31C40036A00987729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66BF71B41C40036A00987729 /* Build configuration list for PBXNativeTarget "Z-ReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +843,7 @@
 				66BF71B61C40036A00987729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

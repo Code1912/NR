@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[SearchListViewModel tableView:viewForFooterInSection:]:SearchListViewModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[KeyWordViewController collectionView:viewForSupplementaryElementOfKind:atIndexPath:]:KeyWordViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[KeyWordViewController collectionView:layout:sizeForItemAtIndexPath:]:KeyWordViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "flowLayout.headerReferenceSize">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[KeyWordViewController collectionView:cellForItemAtIndexPath:]:KeyWordViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[BookManager addBook:]:BookManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "book.rowid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoadMoreTableViewCell showWork]:LoadMoreTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoadMoreTableViewCell layoutSubviews]:LoadMoreTableViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SearchListViewModel scrollViewDidScroll:]:SearchListViewModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView.contentOffset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoadMoreTableViewCell initWithReuseIdentifier:]:LoadMoreTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BookrackCell setBookInfo:]:BookrackCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.logoImgView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SearchViewController tableView:heightForRowAtIndexPath:]:SearchViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoadMoreTableViewCell doClick]:LoadMoreTableViewCell.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

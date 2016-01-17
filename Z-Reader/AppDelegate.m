@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UserSetting.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [UserSetting getIntance];
+  //   UINavigationController *uiNavigationController = (UINavigationController *)self.window.rootViewController;
+  //  uiNavigationController.navigationBarHidden=YES;
     return YES;
 }
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZReaderCell" id="gTV-IL-0wX" customClass="BookrackCell">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="102" height="115"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adn-Pw-lEA">
+                        <rect key="frame" x="0.0" y="42" width="82" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="qI6-Wm-06d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r45-jl-CVj">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="42"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="r45-jl-CVj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="00e-ur-NIi"/>
+                <constraint firstItem="adn-Pw-lEA" firstAttribute="top" secondItem="r45-jl-CVj" secondAttribute="bottom" id="7mk-OF-Dej"/>
+                <constraint firstAttribute="bottom" secondItem="adn-Pw-lEA" secondAttribute="bottom" constant="20" id="FAJ-k2-FEg"/>
+                <constraint firstItem="r45-jl-CVj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hxh-8X-U26"/>
+                <constraint firstItem="adn-Pw-lEA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="K0T-N3-QQ1"/>
+                <constraint firstAttribute="trailing" secondItem="adn-Pw-lEA" secondAttribute="trailing" id="M6M-Nj-lQ7"/>
+                <constraint firstAttribute="trailing" secondItem="r45-jl-CVj" secondAttribute="trailing" id="MVk-IV-eza"/>
+                <constraint firstItem="adn-Pw-lEA" firstAttribute="top" secondItem="r45-jl-CVj" secondAttribute="bottom" id="Y0I-az-elb"/>
+            </constraints>
+            <size key="customSize" width="102" height="115"/>
+            <connections>
+                <outlet property="bookNameLabel" destination="adn-Pw-lEA" id="357-u9-2pQ"/>
+                <outlet property="logoImgView" destination="r45-jl-CVj" id="AsC-rl-nfO"/>
+            </connections>
+            <point key="canvasLocation" x="177" y="113.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
