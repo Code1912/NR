@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-ft-ICa">
-                                <rect key="frame" x="0.0" y="64" width="600" height="461"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="505"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -130,10 +130,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YU1-nr-ctw" firstAttribute="top" secondItem="Hca-ft-ICa" secondAttribute="bottom" id="Ac9-2j-35r"/>
+                            <constraint firstItem="Hca-ft-ICa" firstAttribute="top" secondItem="tsw-Ph-ghN" secondAttribute="bottom" id="Kcj-Fs-euh"/>
                             <constraint firstItem="Hca-ft-ICa" firstAttribute="leading" secondItem="qmH-1t-vWP" secondAttribute="leadingMargin" constant="-20" id="VfN-Xr-9Oc"/>
                             <constraint firstItem="Hca-ft-ICa" firstAttribute="top" secondItem="tsw-Ph-ghN" secondAttribute="bottom" id="Vh6-ke-BiB"/>
+                            <constraint firstItem="Hca-ft-ICa" firstAttribute="top" secondItem="qmH-1t-vWP" secondAttribute="topMargin" id="WPA-a1-Hdh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hca-ft-ICa" secondAttribute="trailing" constant="-20" id="aj3-qP-cUb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kcj-Fs-euh"/>
+                                <exclude reference="Vh6-ke-BiB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="6M1-9C-wGg"/>
                     <connections>

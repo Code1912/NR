@@ -31,7 +31,6 @@
 		66BF71F51C40051800987729 /* UINavigationBar+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71BE1C40051800987729 /* UINavigationBar+Z.m */; };
 		66BF71F61C40051800987729 /* UITableView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C01C40051800987729 /* UITableView+Z.m */; };
 		66BF71F71C40051800987729 /* BookrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C41C40051800987729 /* BookrackViewController.m */; };
-		66BF71F91C40051800987729 /* SearchListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71C91C40051800987729 /* SearchListViewModel.m */; };
 		66BF71FA1C40051800987729 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71CB1C40051800987729 /* SearchViewController.m */; };
 		66BF71FC1C40051800987729 /* BaseSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D01C40051800987729 /* BaseSetting.m */; };
 		66BF71FD1C40051800987729 /* HotWordResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71D21C40051800987729 /* HotWordResponse.m */; };
@@ -114,8 +113,6 @@
 		66BF71C01C40051800987729 /* UITableView+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Z.m"; sourceTree = "<group>"; };
 		66BF71C31C40051800987729 /* BookrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookrackViewController.h; sourceTree = "<group>"; };
 		66BF71C41C40051800987729 /* BookrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookrackViewController.m; sourceTree = "<group>"; };
-		66BF71C81C40051800987729 /* SearchListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListViewModel.h; sourceTree = "<group>"; };
-		66BF71C91C40051800987729 /* SearchListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListViewModel.m; sourceTree = "<group>"; };
 		66BF71CA1C40051800987729 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		66BF71CB1C40051800987729 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		66BF71CF1C40051800987729 /* BaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSetting.h; sourceTree = "<group>"; };
@@ -308,8 +305,6 @@
 		66BF71C51C40051800987729 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				66BF71C81C40051800987729 /* SearchListViewModel.h */,
-				66BF71C91C40051800987729 /* SearchListViewModel.m */,
 				66BF71CA1C40051800987729 /* SearchViewController.h */,
 				66BF71CB1C40051800987729 /* SearchViewController.m */,
 				666931E41C47CFAD0056F7BC /* KeyWordViewController.h */,
@@ -576,7 +571,6 @@
 				66BF718C1C40036A00987729 /* ViewController.m in Sources */,
 				66A5AA471C45565800FA824C /* BookDetailViewController.m in Sources */,
 				66A5AA511C46822D00FA824C /* UICollectionView+Z.m in Sources */,
-				66BF71F91C40051800987729 /* SearchListViewModel.m in Sources */,
 				66BF71FE1C40051800987729 /* NovelCellView.m in Sources */,
 				66A5AA4D1C46768000FA824C /* BookrackCell.m in Sources */,
 				66BF71FF1C40051800987729 /* NovelInfo.m in Sources */,
