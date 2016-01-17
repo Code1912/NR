@@ -2,8 +2,8 @@
 //  BookRackViewController.h
 //  ZReader
 //
-//  Created by 曾超 on 16/1/2.
-//  Copyright © 2016年 zeng3750@qq.com. All rights reserved.
+//  Created by Code on 16/1/2.
+//  Copyright © 2016年 Code. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

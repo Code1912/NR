@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--我的书架-->
+        <!--Bookrack View Controller-->
         <scene sceneID="NCa-7G-GVV">
             <objects>
                 <viewController id="GDP-za-IVq" customClass="BookrackViewController" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZG3-N9-JVZ" firstAttribute="top" secondItem="wcK-an-pre" secondAttribute="topMargin" id="Dwo-0q-791"/>
+                            <constraint firstItem="ZG3-N9-JVZ" firstAttribute="top" secondItem="wcK-an-pre" secondAttribute="topMargin" constant="10" id="Dwo-0q-791"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZG3-N9-JVZ" secondAttribute="trailing" id="YIJ-bx-lvZ"/>
                             <constraint firstItem="ZG3-N9-JVZ" firstAttribute="top" secondItem="0u0-YD-LOj" secondAttribute="bottom" id="bL5-QM-oyj"/>
                             <constraint firstItem="FXy-zl-2Fl" firstAttribute="top" secondItem="ZG3-N9-JVZ" secondAttribute="bottom" id="gCQ-eT-esG"/>
@@ -44,7 +44,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="我的书架" id="3J9-k3-daa"/>
+                    <navigationItem key="navigationItem" id="3J9-k3-daa"/>
                     <connections>
                         <outlet property="bookListView" destination="ZG3-N9-JVZ" id="6ZF-BN-dcl"/>
                         <outlet property="rootView" destination="wcK-an-pre" id="kUz-3F-aMJ"/>

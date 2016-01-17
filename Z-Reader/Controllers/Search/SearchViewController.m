@@ -2,8 +2,8 @@
 //  SearchViewController.m
 //  ZReader
 //
-//  Created by 曾超 on 16/1/2.
-//  Copyright © 2016年 zeng3750@qq.com. All rights reserved.
+//  Created by Code on 16/1/2.
+//  Copyright © 2016年 Code. All rights reserved.
 //
 
 #import "SearchViewController.h"
@@ -38,7 +38,6 @@
     [self.rootView addSubview:self.loadingView];
     
     
-    self.novelListTableView.contentInset = UIEdgeInsetsMake(-1.0f, 0.0f, 0.0f, 0.0);
     [self.novelListTableView  registerNibClass:[SearchTableCellView class] withCellIdentifier:cellReuseIdentifier];
     self.novelListTableView.delegate=self;
     self.novelListTableView.dataSource=self;
@@ -65,7 +64,7 @@
     [btnSearch setBackgroundImage:[UserSetting imgWithName:@"search"] forState:UIControlStateNormal];
     [btnBack setBackgroundImage:[UserSetting imgWithName:@"back"] forState:UIControlStateNormal];
     [_rootView setBackgroundColor:[UserSetting getIntance].backColor];
-    [_novelListTableView setBackgroundColor:[UIColor grayColor]];
+    [_novelListTableView setBackgroundColor:[UserSetting getIntance].backColor];
     txtSearch.textColor=[UserSetting getIntance].titleColor;
 }
 /*
@@ -80,7 +79,7 @@
 
 - (IBAction)backBtn_Click:(id)sender {
      // [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    [self.navigationController popViewControllerAnimated:YES]; 
+        [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
