@@ -32,7 +32,7 @@
     _collectionView.collectionViewLayout=flowLayout;
      self.loadingView=[[LoadingView new]init];
     [_rootView addSubview:self.loadingView];
-    
+     
     btnSearch=[UIButton buttonWithType:UIButtonTypeCustom];
     btnSearch.frame = CGRectMake(0, 0, 30, 30);
     [btnSearch addTarget:self action:@selector(doSearch) forControlEvents:UIControlEventTouchUpInside];
@@ -223,7 +223,7 @@
     }
     else
     {
-        cell.labelTitle.text = [@"\t    " concat:entity.word];
+        cell.labelTitle.text = [@"               " concat:entity.word];
         cell.labelTitle.textAlignment=NSTextAlignmentLeft;
         cell.labelNumber.text= [NSString stringWithFormat: @"%ld", indexPath.row+1];
         

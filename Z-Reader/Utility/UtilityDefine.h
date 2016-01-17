@@ -12,6 +12,10 @@
 #define MakeUIColor(r,g,b,a) [[UIColor new] initWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #endif
 
+
+#define MakeUIButton  [UIButton buttonWithType:UIButtonTypeCustom]
+#define MakeUILabel   [[UILabel new]init]
+
 #ifndef this
 #define this self
 #endif

@@ -241,6 +241,10 @@ didSelectRowAtIndexPath:(NSIndexPath*)indexPath
     if (!cell) {
         return;
     }
+    if (self.navigationController.visibleViewController==self) {
+         
+        [self performSegueWithIdentifier:@"ToDetail" sender:self];
+    }
 }
 //可编辑状态
 - (BOOL)tableView:(UITableView*)tableView

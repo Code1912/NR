@@ -12,6 +12,9 @@
 		66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A1F1C4B8945005301AB /* HotWordHeaderView.xib */; };
 		66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66236A231C4B89AE005301AB /* KeyWordViewCell.m */; };
 		66236A261C4B89AE005301AB /* KeyWordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A241C4B89AE005301AB /* KeyWordViewCell.xib */; };
+		6658C9DF1C4BD6E600DD95F0 /* UILabel+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9DE1C4BD6E600DD95F0 /* UILabel+Z.m */; };
+		6658C9E21C4BD6FC00DD95F0 /* UIButton+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9E11C4BD6FC00DD95F0 /* UIButton+Z.m */; };
+		6658C9E51C4BD71300DD95F0 /* UIView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9E41C4BD71300DD95F0 /* UIView+Z.m */; };
 		666931E61C47CFAD0056F7BC /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E51C47CFAD0056F7BC /* KeyWordViewController.m */; };
 		666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */; };
 		66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */; };
@@ -76,6 +79,12 @@
 		66236A231C4B89AE005301AB /* KeyWordViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewCell.m; sourceTree = "<group>"; };
 		66236A241C4B89AE005301AB /* KeyWordViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyWordViewCell.xib; sourceTree = "<group>"; };
 		66236A2A1C4BBB09005301AB /* UtilityDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilityDefine.h; sourceTree = "<group>"; };
+		6658C9DD1C4BD6E600DD95F0 /* UILabel+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Z.h"; sourceTree = "<group>"; };
+		6658C9DE1C4BD6E600DD95F0 /* UILabel+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Z.m"; sourceTree = "<group>"; };
+		6658C9E01C4BD6FC00DD95F0 /* UIButton+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Z.h"; sourceTree = "<group>"; };
+		6658C9E11C4BD6FC00DD95F0 /* UIButton+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Z.m"; sourceTree = "<group>"; };
+		6658C9E31C4BD71300DD95F0 /* UIView+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Z.h"; sourceTree = "<group>"; };
+		6658C9E41C4BD71300DD95F0 /* UIView+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Z.m"; sourceTree = "<group>"; };
 		666931E41C47CFAD0056F7BC /* KeyWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyWordViewController.h; path = "Z-Reader/Controllers/KeyWordViewController.h"; sourceTree = SOURCE_ROOT; };
 		666931E51C47CFAD0056F7BC /* KeyWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyWordViewController.m; path = "Z-Reader/Controllers/KeyWordViewController.m"; sourceTree = SOURCE_ROOT; };
 		666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Z.h"; sourceTree = "<group>"; };
@@ -298,6 +307,12 @@
 				66A5AA501C46822D00FA824C /* UICollectionView+Z.m */,
 				666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */,
 				666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */,
+				6658C9DD1C4BD6E600DD95F0 /* UILabel+Z.h */,
+				6658C9DE1C4BD6E600DD95F0 /* UILabel+Z.m */,
+				6658C9E01C4BD6FC00DD95F0 /* UIButton+Z.h */,
+				6658C9E11C4BD6FC00DD95F0 /* UIButton+Z.m */,
+				6658C9E31C4BD71300DD95F0 /* UIView+Z.h */,
+				6658C9E41C4BD71300DD95F0 /* UIView+Z.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -601,17 +616,20 @@
 				66BF71F61C40051800987729 /* UITableView+Z.m in Sources */,
 				66BF71891C40036A00987729 /* AppDelegate.m in Sources */,
 				66BF71FC1C40051800987729 /* BaseSetting.m in Sources */,
+				6658C9DF1C4BD6E600DD95F0 /* UILabel+Z.m in Sources */,
 				66BF71F41C40051800987729 /* UIImage+Z.m in Sources */,
 				66BF71F51C40051800987729 /* UINavigationBar+Z.m in Sources */,
 				66BF71FD1C40051800987729 /* HotWordResponse.m in Sources */,
 				66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */,
 				66BF72001C40051800987729 /* SearchNovelResponse.m in Sources */,
+				6658C9E21C4BD6FC00DD95F0 /* UIButton+Z.m in Sources */,
 				66BF720C1C40051800987729 /* LoadingView.m in Sources */,
 				66BF71FA1C40051800987729 /* SearchViewController.m in Sources */,
 				66BF71F71C40051800987729 /* BookrackViewController.m in Sources */,
 				666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */,
 				66BF71861C40036A00987729 /* main.m in Sources */,
 				66BF72021C40051800987729 /* WordEntity.m in Sources */,
+				6658C9E51C4BD71300DD95F0 /* UIView+Z.m in Sources */,
 				66BF720D1C40051800987729 /* SearchTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
