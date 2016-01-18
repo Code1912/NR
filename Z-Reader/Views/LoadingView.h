@@ -18,4 +18,5 @@
 -(void)show;
 -(void)showWithText:(NSString*)text;
 -(void)hide;
++(instancetype)initView;
 @end

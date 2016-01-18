@@ -10,6 +10,10 @@
 #ifndef List
 #define List NSMutableArray
 #endif
+
+#ifndef ListNew
+#define ListNew [[NSMutableArray new] init]
+#endif
 @interface NSMutableArray<T> (Z)
 
 typedef BOOL(^findBlock)(T item);

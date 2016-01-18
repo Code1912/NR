@@ -13,13 +13,18 @@ static  NSString* const _Nonnull  GetHotWordUrl=@"http://dushu.baidu.com/ajax/se
 //word=%@  word=要查询的关键字  pn=pageNumber
 static   NSString* const _Nonnull   SearchNovelUrl=@"http://dushu.baidu.com/ajax/searchresult?word=%@&pn=%ld";
 
+//word=%@  word=要查询的关键字  pn=pageNumber
+static   NSString* const _Nonnull   SearchNovelUrl0=@"http://dushu.baidu.com/ajax/searchresult?word=%@";
+
 //http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=4&id=wisenovel&pi=2&order=asc&gid=1786047843
 // pi=%d 表示页数  gid=%ld 小说的id
-static   NSString* const _Nonnull   GetChapterListUrl=@"http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=4&id=wisenovel&pi=%d&order=asc&gid=%ld";
+static   NSString* const _Nonnull   GetChapterListUrl=@"http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=4&id=wisenovel&pi=%ld&order=asc&gid=%ld";
 
 //http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=1&gid=1786047843&alals=1&preNum=1&preLoad=true&src=http%3A%2F%2Fwww.bxwx.org%2Fb%2F118%2F118806%2F20957696.html&cid=1786047843%7C17722447306943420439&time=&skey=&id=wisenovel
 //gid=小说id（long） src=章节url   cid=章节的cid
 static   NSString* const _Nonnull   GetChapterContentUrl=@"http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=1&gid=%ld&alals=1&preNum=1&preLoad=true&src=%@&cid=%@&time=&skey=&id=wisenovel";
+//gid=小说id（long） src= 小说url
+static NSString* const _Nonnull GetNovelDetailUrl=@"http://m.baidu.com/tc?srd=1&appui=alaxs&ajax=1&alalog=1&gid=%ld&pageType=NOVEL_INDEX&src=%@&time=&skey=&id=wisenovel";
 
 static  NSString * const _Nonnull cellReuseIdentifier=@"ZReaderCell";
 static  NSString * const _Nonnull  headerReuseIdentifier=@"Header";

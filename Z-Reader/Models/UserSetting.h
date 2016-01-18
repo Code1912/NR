@@ -14,6 +14,7 @@
 @interface UserSetting : NSObject
 @property(nonatomic) UIColor *mainColor;
 @property(nonatomic) UIColor *backColor;
+@property(nonatomic) UIColor *headerColor;
 @property(nonatomic) UIColor *titleColor;
 @property(nonatomic) UIColor *contentColor;
 @property(nonatomic) NSInteger headerFontSize;

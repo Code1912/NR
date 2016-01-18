@@ -47,6 +47,7 @@
 -(void)configTheme
 {
     self.bookNameLabel.textColor=[UserSetting getIntance].titleColor;
+    self.bookNameLabel.numberOfLines=0;
     
 }
 @end

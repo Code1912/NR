@@ -22,6 +22,8 @@
     NSMutableArray<UIBarButtonItem*>* btnArray = [[NSMutableArray new] init];
     [btnArray addObject:[[UIBarButtonItem new] initWithCustomView:btnSearch]];
     this.navigationItem.rightBarButtonItems = [btnArray copy];
+    
+    
     this.navigationItem.title = @"我的书架";
     [self.bookListView registerNibClass:[BookrackCell class] withCellIdentifier:cellReuseIdentifier];
     self.bookListView.delegate = self;
@@ -67,7 +69,13 @@
 - (CGSize)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath*)indexPath
 {
 
-    return CGSizeMake(90, 180);
+    if (isPad) {
+        return CGSizeMake(100, 180);
+    }
+    else
+    {
+        return CGSizeMake(55, 120);
+    }
 }
 
 /*

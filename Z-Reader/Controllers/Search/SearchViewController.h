@@ -16,6 +16,7 @@
 #import "BaseViewController.h"
 #import "SearchTableCellView.h"
 #import "LoadMoreTableViewCell.h"
+#import "BookDetailViewController.h"
 @interface SearchViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate,LoadMoreDelegate>
 {
     UIButton *btnBack;

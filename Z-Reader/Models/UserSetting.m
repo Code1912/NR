@@ -22,6 +22,7 @@ static UserSetting* intance=nil;
         self.titleFontSize=12;
         self.contentFontSize=10;
         self.isNightMode=false;
+        self.headerColor=[UIColor whiteColor];
         self.theme=@"Day";
     }
     return self;
@@ -60,6 +61,9 @@ static UserSetting* intance=nil;
                 if(intance.theme==nil)
                 {
                     intance.theme=@"Day";
+                }
+                if (temp.headerColor) {
+                    intance.headerColor=temp.headerColor;
                 }
             }
             [intance deleteToDB];

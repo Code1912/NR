@@ -37,7 +37,10 @@
     }
     return self;
 }
-
++(instancetype)initView
+{
+    return [[LoadingView new]init];
+}
 -(void)layoutSubviews{
     if(self.superview)
     {

@@ -49,6 +49,12 @@
 		66BF720D1C40051800987729 /* SearchTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF71F11C40051800987729 /* SearchTableCellView.m */; };
 		66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BF71F21C40051800987729 /* SearchTableCellView.xib */; };
 		66BF72101C40052F00987729 /* Theme in Resources */ = {isa = PBXBuildFile; fileRef = 66BF720F1C40052F00987729 /* Theme */; };
+		66ED08381C4D131000C376F7 /* ChapterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED08371C4D131000C376F7 /* ChapterInfo.m */; };
+		66ED083B1C4D160200C376F7 /* BookDetailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED083A1C4D160200C376F7 /* BookDetailResponse.m */; };
+		66ED08411C4D2F9F00C376F7 /* BookDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED08401C4D2F9F00C376F7 /* BookDetailInfo.m */; };
+		66ED08451C4D3A2B00C376F7 /* ChapterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED08441C4D3A2B00C376F7 /* ChapterViewCell.m */; };
+		66ED08471C4D3A4C00C376F7 /* ChapterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66ED08461C4D3A4C00C376F7 /* ChapterViewCell.xib */; };
+		66ED084A1C4D3DA100C376F7 /* ChapterListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED08491C4D3DA100C376F7 /* ChapterListResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +158,17 @@
 		66BF71F11C40051800987729 /* SearchTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableCellView.m; sourceTree = "<group>"; };
 		66BF71F21C40051800987729 /* SearchTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableCellView.xib; sourceTree = "<group>"; };
 		66BF720F1C40052F00987729 /* Theme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Theme; sourceTree = "<group>"; };
+		66ED08361C4D131000C376F7 /* ChapterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterInfo.h; sourceTree = "<group>"; };
+		66ED08371C4D131000C376F7 /* ChapterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterInfo.m; sourceTree = "<group>"; };
+		66ED08391C4D160200C376F7 /* BookDetailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailResponse.h; sourceTree = "<group>"; };
+		66ED083A1C4D160200C376F7 /* BookDetailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailResponse.m; sourceTree = "<group>"; };
+		66ED083F1C4D2F9F00C376F7 /* BookDetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailInfo.h; sourceTree = "<group>"; };
+		66ED08401C4D2F9F00C376F7 /* BookDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailInfo.m; sourceTree = "<group>"; };
+		66ED08431C4D3A2B00C376F7 /* ChapterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterViewCell.h; sourceTree = "<group>"; };
+		66ED08441C4D3A2B00C376F7 /* ChapterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterViewCell.m; sourceTree = "<group>"; };
+		66ED08461C4D3A4C00C376F7 /* ChapterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChapterViewCell.xib; sourceTree = "<group>"; };
+		66ED08481C4D3DA100C376F7 /* ChapterListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterListResponse.h; sourceTree = "<group>"; };
+		66ED08491C4D3DA100C376F7 /* ChapterListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterListResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +382,14 @@
 				66BF71DA1C40051800987729 /* UserSetting.m */,
 				66BF71DB1C40051800987729 /* WordEntity.h */,
 				66BF71DC1C40051800987729 /* WordEntity.m */,
+				66ED08361C4D131000C376F7 /* ChapterInfo.h */,
+				66ED08371C4D131000C376F7 /* ChapterInfo.m */,
+				66ED08391C4D160200C376F7 /* BookDetailResponse.h */,
+				66ED083A1C4D160200C376F7 /* BookDetailResponse.m */,
+				66ED083F1C4D2F9F00C376F7 /* BookDetailInfo.h */,
+				66ED08401C4D2F9F00C376F7 /* BookDetailInfo.m */,
+				66ED08481C4D3DA100C376F7 /* ChapterListResponse.h */,
+				66ED08491C4D3DA100C376F7 /* ChapterListResponse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +410,7 @@
 		66BF71EC1C40051800987729 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				66ED08421C4D39F100C376F7 /* BookDetail */,
 				66236A1C1C4B890F005301AB /* KeyWord */,
 				66A5AA491C46765300FA824C /* Bookrack */,
 				66BF71EF1C40051800987729 /* Search */,
@@ -404,6 +430,16 @@
 				66BF71F21C40051800987729 /* SearchTableCellView.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		66ED08421C4D39F100C376F7 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				66ED08431C4D3A2B00C376F7 /* ChapterViewCell.h */,
+				66ED08441C4D3A2B00C376F7 /* ChapterViewCell.m */,
+				66ED08461C4D3A4C00C376F7 /* ChapterViewCell.xib */,
+			);
+			path = BookDetail;
 			sourceTree = "<group>";
 		};
 		B6EFC94833E290CD320F878D /* Frameworks */ = {
@@ -521,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66BF71941C40036A00987729 /* LaunchScreen.storyboard in Resources */,
+				66ED08471C4D3A4C00C376F7 /* ChapterViewCell.xib in Resources */,
 				66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */,
 				66A5AA4E1C46768000FA824C /* BookrackCell.xib in Resources */,
 				66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */,
@@ -612,21 +649,26 @@
 				66236A201C4B8945005301AB /* HotWordHeaderView.m in Sources */,
 				66BF72011C40051800987729 /* UserSetting.m in Sources */,
 				66A5AA431C45264C00FA824C /* BookManager.m in Sources */,
+				66ED08451C4D3A2B00C376F7 /* ChapterViewCell.m in Sources */,
 				66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */,
 				66BF71F61C40051800987729 /* UITableView+Z.m in Sources */,
 				66BF71891C40036A00987729 /* AppDelegate.m in Sources */,
 				66BF71FC1C40051800987729 /* BaseSetting.m in Sources */,
 				6658C9DF1C4BD6E600DD95F0 /* UILabel+Z.m in Sources */,
+				66ED084A1C4D3DA100C376F7 /* ChapterListResponse.m in Sources */,
 				66BF71F41C40051800987729 /* UIImage+Z.m in Sources */,
 				66BF71F51C40051800987729 /* UINavigationBar+Z.m in Sources */,
 				66BF71FD1C40051800987729 /* HotWordResponse.m in Sources */,
 				66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */,
 				66BF72001C40051800987729 /* SearchNovelResponse.m in Sources */,
 				6658C9E21C4BD6FC00DD95F0 /* UIButton+Z.m in Sources */,
+				66ED083B1C4D160200C376F7 /* BookDetailResponse.m in Sources */,
 				66BF720C1C40051800987729 /* LoadingView.m in Sources */,
 				66BF71FA1C40051800987729 /* SearchViewController.m in Sources */,
+				66ED08411C4D2F9F00C376F7 /* BookDetailInfo.m in Sources */,
 				66BF71F71C40051800987729 /* BookrackViewController.m in Sources */,
 				666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */,
+				66ED08381C4D131000C376F7 /* ChapterInfo.m in Sources */,
 				66BF71861C40036A00987729 /* main.m in Sources */,
 				66BF72021C40051800987729 /* WordEntity.m in Sources */,
 				6658C9E51C4BD71300DD95F0 /* UIView+Z.m in Sources */,

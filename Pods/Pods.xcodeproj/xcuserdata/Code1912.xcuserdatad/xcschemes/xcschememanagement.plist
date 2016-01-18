@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TouchJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21ABC0E6D2E9466A0C4D2ACE25890048</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3528FA1DBE3E5C6AB799FC7BEA473755</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D3F167F92F15CCA0AEF18DDDD242F3B</key>
+		<key>77E21F91EF644245B73342DC86818682</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2A8CA6AD9CD23FAC5B0401C657CC809</key>
+		<key>AA68505D8C9FB2F4850B18AE759A7DF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B1FD118A8D8BACB542FB2D3DB55119B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DDCE26CDE8794AF8E72BAE43A355AFC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA32B2852D477A74982710021A4F2B53</key>
 		<dict>
 			<key>primary</key>
 			<true/>
