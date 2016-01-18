@@ -32,7 +32,15 @@
         this.categoryLabel.text = [@"分类：" concat:this.book.categoryName];
         this.sourceLabel.text = [@"状态：" concat:this.book.status];
         [this.bookImgView sd_setImageWithURL:[this.book.imgUrl toURL]];
-        this.bookInfoLabel.text = [@"     " concat:this.book.summary];
+        if([this.book.summary length]>300)
+        {
+            this.bookInfoLabel.text = [[[@"     " concat:this.book.summary ] substringWithRange:NSMakeRange(0, 250)] concat:@"......"];;
+        }
+        else
+        {
+            this.bookInfoLabel.text = [@"     " concat:this.book.summary];
+        }
+        NSLog(@"-----:%ld",[this.book.summary length]);
     }
     this.btnStartRead.backgroundColor = [UserSetting getIntance].mainColor;
     [this.btnStartRead setTitleColor:[UserSetting getIntance].headerColor forState:UIControlStateNormal];
@@ -97,13 +105,12 @@
     {
         ChapterListResponse* res =
         [ChapterListResponse yy_modelWithJSON:responseString];
-        List<ChapterInfo *> *list=res.list;
+ 
         chapterListInfo=res;
-        chapterListInfo.list=ListNew;
-        [list each:^(ChapterInfo *item) {
-            [chapterListInfo.list add:item];
-        }];
+     
         [this.tableView reloadData];
+        CGRect frame= this.tableView.frame;
+       // this.tableView.frame=CGRectMake(frame.origin.x, frame.origin.y, SCREEN_WIDTH, SCREEN_HEIGHT);
     }
 }
 
@@ -164,7 +171,7 @@
                                                        dequeueReusableCellWithIdentifier:cellReuseIdentifier
                                                        forIndexPath:indexPath];
     ChapterInfo *info=[chapterListInfo.list getByIndex:indexPath.row ];
-     cell.chapterLabel.text=[info.text copy];
+     cell.chapterLabel.text=info.text ;
     cell.chapterLabel.textColor=[UserSetting getIntance].contentColor;
     return cell;
 }

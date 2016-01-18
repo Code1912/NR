@@ -3,6 +3,9 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[BookDetailViewController tableView:cellForRowAtIndexPath:]:BookDetailViewController.m">
+      </ContextState>
+      <ContextState
          contextName = "-[SearchListViewModel tableView:viewForFooterInSection:]:SearchListViewModel.m">
       </ContextState>
       <ContextState
@@ -56,6 +59,9 @@
          contextName = "-[LoadMoreTableViewCell initWithReuseIdentifier:]:LoadMoreTableViewCell.m">
       </ContextState>
       <ContextState
+         contextName = "-[BookDetailViewController viewDidLoad]:BookDetailViewController.m">
+      </ContextState>
+      <ContextState
          contextName = "-[BookrackCell setBookInfo:]:BookrackCell.m">
          <PersistentStrings>
             <PersistentString
@@ -73,6 +79,14 @@
       </ContextState>
       <ContextState
          contextName = "-[LoadMoreTableViewCell doClick]:LoadMoreTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BookDetailViewController requestFinished:]:BookDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

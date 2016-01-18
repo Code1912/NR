@@ -20,5 +20,7 @@
              @"has_more" : @"data.has_more",
              @"status" : @"data."};
 }
- 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"list" : [ChapterInfo class]};
+}
 @end

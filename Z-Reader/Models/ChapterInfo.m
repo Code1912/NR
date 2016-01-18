@@ -9,6 +9,8 @@
 #import "ChapterInfo.h"
 
 @implementation ChapterInfo
+
+ 
 - (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
     NSNumber *timestamp = dic[@"update_time"];
     if (![timestamp isKindOfClass:[NSNumber class]]) return NO;
