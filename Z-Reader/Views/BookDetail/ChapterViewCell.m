@@ -9,5 +9,8 @@
 #import "ChapterViewCell.h"
 
 @implementation ChapterViewCell
-
+-(void)awakeFromNib
+{
+    self.chapterLabel.textColor=[UserSetting getIntance].titleColor;
+}
 @end

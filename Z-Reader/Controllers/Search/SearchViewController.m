@@ -287,7 +287,12 @@
         [tempCell initSubViews:size];
         tempCell.delegate = self;
     }
+    else{
+        
+        [tempCell resetSize:CGSizeMake(tableView.frame.size.width, 40)];
+    }
     footerView = tempCell;
+    
     return footerView;
 }
 

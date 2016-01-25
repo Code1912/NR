@@ -31,7 +31,12 @@
         this.authorLabel.text = [@"作者：" concat:this.book.author];
         this.categoryLabel.text = [@"分类：" concat:this.book.categoryName];
         this.sourceLabel.text = [@"状态：" concat:this.book.status];
-        [this.bookImgView sd_setImageWithURL:[this.book.imgUrl toURL]];
+        if ([this.book.imgUrl isNullOrWhiteSpaceEmpty]) {
+            [this.bookImgView setImage: [UserSetting imgWithName:@"noimg"]];
+        }
+        else{
+            [this.bookImgView sd_setImageWithURL:[this.book.imgUrl toURL]];
+        }
         if([this.book.summary length]>300)
         {
             this.bookInfoLabel.text = [[[@"     " concat:this.book.summary ] substringWithRange:NSMakeRange(0, 250)] concat:@"......"];;
@@ -40,7 +45,7 @@
         {
             this.bookInfoLabel.text = [@"     " concat:this.book.summary];
         }
-        NSLog(@"-----:%ld",[this.book.summary length]);
+       // NSLog(@"-----:%ld",[this.book.summary length]);
     }
     this.btnStartRead.backgroundColor = [UserSetting getIntance].mainColor;
     [this.btnStartRead setTitleColor:[UserSetting getIntance].headerColor forState:UIControlStateNormal];
@@ -55,13 +60,20 @@
     this.sourceLabel.textColor = [UserSetting getIntance].titleColor;
     this.bookInfoLabel.textColor = [UserSetting getIntance].contentColor;
     this.tagLabel.textColor = [UserSetting getIntance].titleColor;
+    this.scrollView.contentSize=this.root.frame.size;
+    this.scrollView.delegate=self;
+    
+    this.tableView.scrollEnabled=NO;
     this.loadingView = [LoadingView initView];
     [this.root addSubview:this.loadingView];
+    
     [this.tableView registerNibClass:[ChapterViewCell class] withCellIdentifier:cellReuseIdentifier];
+ 
     this.tableView.dataSource=this;
     this.tableView.delegate=this;
     [self doQueryDetail];
     [self doQueryChapterList];
+    //this.scrollView.frame=this.root.frame;
 }
 
 - (void)btnBack_Click
@@ -108,12 +120,40 @@
  
         chapterListInfo=res;
      
+       
+        CGRect frame= this.scrollView.frame;
+     
+        //this.scrollView.frame=CGRectMake(0, 0, SCREEN_WIDTH, this.tableView.frame.origin.y+20*40) ;
+        this.scrollView.contentSize=CGSizeMake(SCREEN_WIDTH, this.tableView.frame.origin.y+22*30);
+    
+         //this.tableView.frame=CGRectMake(0, 0, SCREEN_WIDTH, 22*30);
         [this.tableView reloadData];
-        CGRect frame= this.tableView.frame;
-       // this.tableView.frame=CGRectMake(frame.origin.x, frame.origin.y, SCREEN_WIDTH, SCREEN_HEIGHT);
     }
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGRect frame= this.scrollView.frame;
+    
+    //this.scrollView.frame=CGRectMake(0, 0, SCREEN_WIDTH, this.tableView.frame.origin.y+20*40) ;
+    this.scrollView.contentSize=CGSizeMake(SCREEN_WIDTH, this.tableView.frame.origin.y+22*30);
+    this.tableView.frame=CGRectMake(frame.origin.x, frame.origin.y, SCREEN_WIDTH, 22*30);
+   // NSLog(@"------------ddsdfsfsfd");
+}
+-(void)viewDidLayoutSubviews
+{
+   // NSLog(@"22");
+   // this.scrollView.frame=CGRectMake(0, 0, SCREEN_WIDTH, this.tableView.frame.origin.y+this.tableView.frame.size.height);
+   // this.scrollView.contentSize=CGSizeMake(SCREEN_WIDTH, this.tableView.frame.origin.y+this.tableView.frame.size.height);
+}
 
+-(void)viewWillAppear:(BOOL)animated
+{
+   //  NSLog(@"111");
+}
+-(void)layoutSublayersOfLayer:(CALayer *)layer
+{
+    
+}
 -(void)doQueryChapterList
 {
     NSInteger pageNumber=1;
@@ -157,9 +197,13 @@
     return 1;
 }
 
+
 - (NSInteger)tableView:(UITableView*)tableView
  numberOfRowsInSection:(NSInteger)section
 {
+    if (chapterListInfo.list.count>20) {
+        return  20;
+    }
     return chapterListInfo.list.count;
 }
 
@@ -174,5 +218,52 @@
      cell.chapterLabel.text=info.text ;
     cell.chapterLabel.textColor=[UserSetting getIntance].contentColor;
     return cell;
+}
+- (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30.0f;
+}
+
+- (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 30;
+}
+
+- (void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+}
+- (CGFloat)tableView:(UITableView*)tableView
+heightForRowAtIndexPath:(nonnull NSIndexPath*)indexPath
+{
+    //  NSLog(@"index:%d",indexPath.row);
+    return 30;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (!tableHeader) {
+     //  tableHeader=[[UIView new]initWithFrame:CGRectMake(0,0, tableView.frame.size.width, 30)];
+        UILabel *label=[[UILabel new]init];
+        label.frame=CGRectMake(0,0, tableView.frame.size.width, 30);
+        label.backgroundColor=[UserSetting getIntance].contentColor;
+        label.textColor=[UIColor whiteColor];
+        label.font=[UIFont systemFontOfSize:12];
+        label.textAlignment=NSTextAlignmentLeft;
+        label.text=@"目录";
+        tableHeader= label;
+    }
+    else{
+        tableHeader.frame=CGRectMake(0,0, tableView.frame.size.width, 30);
+    }
+    return tableHeader;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return tableFooter;
 }
 @end

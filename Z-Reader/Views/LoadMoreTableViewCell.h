@@ -24,6 +24,7 @@
 -(void) endWork;
 -(void) endWorkWithNoMore;
 -(void)initSubViews:(CGSize)size;
+-(void)resetSize:(CGSize)size;
 @end
 
 

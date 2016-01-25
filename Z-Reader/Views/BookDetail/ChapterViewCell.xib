@@ -8,16 +8,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZReaderCell" id="fy4-Tu-rmD" customClass="ChapterViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZReaderCell" rowHeight="29" id="fy4-Tu-rmD" customClass="ChapterViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fy4-Tu-rmD" id="8yd-4X-Z1a">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="315" height="28"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxX-Fq-uSC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="20" y="0.0" width="295" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -25,13 +25,14 @@
                 <constraints>
                     <constraint firstItem="rxX-Fq-uSC" firstAttribute="top" secondItem="8yd-4X-Z1a" secondAttribute="topMargin" constant="-8" id="4JQ-r3-vhK"/>
                     <constraint firstAttribute="trailingMargin" secondItem="rxX-Fq-uSC" secondAttribute="trailing" constant="-8" id="9of-vd-Xh7"/>
-                    <constraint firstItem="rxX-Fq-uSC" firstAttribute="leading" secondItem="8yd-4X-Z1a" secondAttribute="leadingMargin" constant="-8" id="lOW-qP-rYq"/>
+                    <constraint firstItem="rxX-Fq-uSC" firstAttribute="leading" secondItem="8yd-4X-Z1a" secondAttribute="leadingMargin" constant="12" id="lOW-qP-rYq"/>
                     <constraint firstAttribute="bottomMargin" secondItem="rxX-Fq-uSC" secondAttribute="bottom" constant="-8" id="zmK-3T-a3p"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="chapterLabel" destination="rxX-Fq-uSC" id="GX0-km-d8Y"/>
             </connections>
+            <point key="canvasLocation" x="372.5" y="188.5"/>
         </tableViewCell>
     </objects>
 </document>

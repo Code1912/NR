@@ -19,7 +19,8 @@
 {
     UIButton *btnBack;
     ChapterListResponse* chapterListInfo;
-
+    UIView *tableHeader;
+    UIView *tableFooter;
 }
 
  
@@ -38,5 +39,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tagLabel;
 @property (weak, nonatomic) IBOutlet UILabel *line2;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+ 
 
 @end

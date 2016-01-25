@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UserSetting.h"
 @interface ChapterViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *chapterLabel;
 

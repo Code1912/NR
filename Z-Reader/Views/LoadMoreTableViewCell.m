@@ -42,7 +42,13 @@ bool loaded=NO;
    
     [self configTheme];
 }
-
+-(void)resetSize:(CGSize)size
+{
+    self.contentView.frame=CGRectMake(0, 0,  size.width, size.height);
+    CGPoint point=self.contentView.center;
+    self.loadingImgView.center = CGPointMake(point.x-75, point.y);
+    self.btn.frame=CGRectMake(0,0, size.width, size.height);
+}
 -(void)doClick
 {
     if(self.delegate)
