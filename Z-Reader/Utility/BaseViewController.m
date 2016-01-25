@@ -9,7 +9,7 @@
 #import "BaseViewController.h"
 #import "UserSetting.h"
 #import "BaseSetting.h"
-#import "CategoryGather.h"
+ 
 @interface BaseViewController ()
 
 @end

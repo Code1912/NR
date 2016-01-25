@@ -359,11 +359,56 @@
                         <outlet property="sourceLabel" destination="n6O-Hv-J4m" id="N2v-2g-HbZ"/>
                         <outlet property="tableView" destination="ZT6-sJ-RGN" id="c5a-yT-JSF"/>
                         <outlet property="tagLabel" destination="Myb-dy-DvV" id="iIu-h0-pzO"/>
+                        <segue destination="n1V-Sm-c6n" kind="push" identifier="ToChapterList" id="Q5M-8F-ZYI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjl-ro-bhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1677" y="-1171"/>
+        </scene>
+        <!--Chapter List View Controller-->
+        <scene sceneID="Ibp-0j-gY5">
+            <objects>
+                <viewController id="n1V-Sm-c6n" customClass="ChapterListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Q1-dm-7OO"/>
+                        <viewControllerLayoutGuide type="bottom" id="nJC-0M-g8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VI-Le-ERZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-pS-tcK">
+                                <rect key="frame" x="0.0" y="48" width="600" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oBu-pS-tcK" firstAttribute="width" secondItem="2VI-Le-ERZ" secondAttribute="width" id="3oP-hn-i0f"/>
+                            <constraint firstItem="oBu-pS-tcK" firstAttribute="leading" secondItem="2VI-Le-ERZ" secondAttribute="leadingMargin" constant="-20" id="I6b-rV-W9p"/>
+                            <constraint firstItem="oBu-pS-tcK" firstAttribute="top" secondItem="2VI-Le-ERZ" secondAttribute="topMargin" id="lQ2-4w-kSb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oBu-pS-tcK" secondAttribute="trailing" constant="-20" id="m77-4c-cFP"/>
+                            <constraint firstItem="nJC-0M-g8Y" firstAttribute="top" secondItem="oBu-pS-tcK" secondAttribute="bottom" id="tbq-FZ-RBw"/>
+                            <constraint firstItem="oBu-pS-tcK" firstAttribute="height" secondItem="2VI-Le-ERZ" secondAttribute="height" id="ztE-Y8-Mbo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3oP-hn-i0f"/>
+                                <exclude reference="ztE-Y8-Mbo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="aej-wI-lBD"/>
+                    <connections>
+                        <outlet property="rootView" destination="2VI-Le-ERZ" id="net-XC-V70"/>
+                        <outlet property="tableView" destination="oBu-pS-tcK" id="jL5-ni-RQu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyN-Fa-ECw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2485" y="-1045"/>
         </scene>
     </scenes>
 </document>

@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[ChapterListViewController tableView:viewForHeaderInSection:]:ChapterListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.contentView.subviews.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[BookDetailViewController tableView:cellForRowAtIndexPath:]:BookDetailViewController.m">
       </ContextState>
       <ContextState

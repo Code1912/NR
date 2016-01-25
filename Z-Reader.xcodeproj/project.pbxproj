@@ -17,6 +17,7 @@
 		6658C9E51C4BD71300DD95F0 /* UIView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9E41C4BD71300DD95F0 /* UIView+Z.m */; };
 		666931E61C47CFAD0056F7BC /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931E51C47CFAD0056F7BC /* KeyWordViewController.m */; };
 		666931EE1C49481F0056F7BC /* NSMutableArray+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */; };
+		669E706D1C565A400047D961 /* ChapterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669E706C1C565A400047D961 /* ChapterListViewController.m */; };
 		66A5A9F01C438E5300FA824C /* LoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */; };
 		66A5AA431C45264C00FA824C /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA421C45264C00FA824C /* BookManager.m */; };
 		66A5AA471C45565800FA824C /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5AA461C45565800FA824C /* BookDetailViewController.m */; };
@@ -95,6 +96,8 @@
 		666931E51C47CFAD0056F7BC /* KeyWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyWordViewController.m; path = "Z-Reader/Controllers/KeyWordViewController.m"; sourceTree = SOURCE_ROOT; };
 		666931EC1C49481F0056F7BC /* NSMutableArray+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Z.h"; sourceTree = "<group>"; };
 		666931ED1C49481F0056F7BC /* NSMutableArray+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Z.m"; sourceTree = "<group>"; };
+		669E706B1C565A400047D961 /* ChapterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterListViewController.h; sourceTree = "<group>"; };
+		669E706C1C565A400047D961 /* ChapterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterListViewController.m; sourceTree = "<group>"; };
 		66A5A9ED1C438E5300FA824C /* LoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableViewCell.h; sourceTree = "<group>"; };
 		66A5A9EE1C438E5300FA824C /* LoadMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableViewCell.m; sourceTree = "<group>"; };
 		66A5A9F21C43949700FA824C /* ThemeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDelegate.h; sourceTree = "<group>"; };
@@ -219,6 +222,15 @@
 			path = KeyWord;
 			sourceTree = "<group>";
 		};
+		669E706A1C565A280047D961 /* ChapterList */ = {
+			isa = PBXGroup;
+			children = (
+				669E706B1C565A400047D961 /* ChapterListViewController.h */,
+				669E706C1C565A400047D961 /* ChapterListViewController.m */,
+			);
+			path = ChapterList;
+			sourceTree = "<group>";
+		};
 		66A5AA441C45563B00FA824C /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +349,7 @@
 		66BF71C11C40051800987729 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				669E706A1C565A280047D961 /* ChapterList */,
 				66A5AA441C45563B00FA824C /* BookDetail */,
 				66BF71C21C40051800987729 /* Bookrack */,
 				66BF71C51C40051800987729 /* Search */,
@@ -653,6 +666,7 @@
 				66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */,
 				66BF71F61C40051800987729 /* UITableView+Z.m in Sources */,
 				66BF71891C40036A00987729 /* AppDelegate.m in Sources */,
+				669E706D1C565A400047D961 /* ChapterListViewController.m in Sources */,
 				66BF71FC1C40051800987729 /* BaseSetting.m in Sources */,
 				6658C9DF1C4BD6E600DD95F0 /* UILabel+Z.m in Sources */,
 				66ED084A1C4D3DA100C376F7 /* ChapterListResponse.m in Sources */,

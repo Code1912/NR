@@ -10,6 +10,7 @@
 #import "NovelInfo.h"
 #import "CategoryGather.h"
 #import "BaseSetting.h"
+#import "ChapterInfo.h"
 @interface BookManager : NSObject
 
 +(BOOL)addBook:(NovelInfo*)book;
