@@ -9,5 +9,9 @@
 #import "UIView+Z.h"
 
 @implementation UIView(Z)
-
+-(void) setBackground:(UIImage *)img
+{
+    UIColor *bgColor = [UIColor colorWithPatternImage: img];
+    self.backgroundColor=bgColor;
+}
 @end

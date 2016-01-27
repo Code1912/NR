@@ -15,6 +15,7 @@
 #import "LoadMoreTableViewCell.h"
 #import "ChapterViewCell.h"
 #import "ChapterListResponse.h"
+#import "ChapterListViewController.h"
 @interface BookDetailViewController : BaseViewController<ASIHTTPRequestDelegate,UITableViewDataSource,UITableViewDelegate,LoadMoreDelegate>
 {
     UIButton *btnBack;

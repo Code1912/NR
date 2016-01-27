@@ -15,12 +15,21 @@
 
 -(BOOL) isNullOrEmpty
 {
-    return self==nil||[self isEqualToString:[NSString empty]];
+    
+    return  self==nil||[self isEqualToString:[NSString empty]];
 }
 
 -(BOOL) isNullOrWhiteSpaceEmpty
 {
      return self==nil||[[self trim] isEqualToString:[NSString empty]];
+}
++(BOOL) isNullOrEmpty:(NSString *)str
+{
+      return  str==nil||[str isEqualToString:[NSString empty]];
+}
++(BOOL) isNullOrWhiteSpaceEmpty:(NSString *)str;
+{
+    return str==nil||[[str trim] isEqualToString:[NSString empty]];
 }
 -(NSURL*) toURL
 {

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface UIView(Z)
+-(void) setBackground:(UIImage *)img;
 
 @end

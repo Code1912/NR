@@ -44,6 +44,13 @@
             this.bookInfoLabel.text = [@"     " concat:this.book.summary];
         }
         // NSLog(@"-----:%ld",[this.book.summary length]);
+        if(this.book.booktype==2)
+        {
+            this.btnStartRead.enabled=NO;
+            [this.btnStartRead setTitle:@"收费小说" forState:UIControlStateNormal];
+            this.btnAddToBookrack.enabled=NO;
+            [this.btnAddToBookrack setTitle:@"无法下载" forState:UIControlStateNormal];
+        }
     }
     this.btnStartRead.backgroundColor = [UserSetting getIntance].mainColor;
     [this.btnStartRead setTitleColor:[UserSetting getIntance].headerColor forState:UIControlStateNormal];
@@ -69,9 +76,11 @@
 
     this.tableView.dataSource = this;
     this.tableView.delegate = this;
-    [self doQueryDetail];
-    [self doQueryChapterList];
-    //this.scrollView.frame=this.root.frame;
+    if(_book&&_book.booktype!=2)
+    {
+        [self doQueryDetail];
+        [self doQueryChapterList];
+    }
 }
 
 - (void)btnBack_Click
@@ -107,8 +116,8 @@
     if (request.tag == 0) {
         BookDetailResponse* res =
             [BookDetailResponse yy_modelWithJSON:responseString];
-        if (res && res.data && res.data.keyWords) {
-            this.tagLabel.text = [res.data.keyWords isNullOrEmpty] ? @"标签：暂无" : [@"标签：" concat:res.data.keyWords];
+        if (res && res.data) {
+            this.tagLabel.text = [NSString isNullOrWhiteSpaceEmpty: res.data.keyWords  ] ? @"标签：暂无" : [@"标签：" concat:res.data.keyWords];
         }
     }
     else {
@@ -135,7 +144,7 @@
 }
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView
 {
-    CGRect frame = this.scrollView.frame;
+  //  CGRect frame = this.scrollView.frame;
 
     //this.scrollView.frame=CGRectMake(0, 0, SCREEN_WIDTH, this.tableView.frame.origin.y+20*40) ;
     //this.scrollView.contentSize=CGSizeMake(SCREEN_WIDTH, this.tableView.frame.origin.y+22*30);
@@ -289,11 +298,19 @@
 
     return tableFooter;
 }
+
 - (void)loadMore
 {
     if (self.navigationController.visibleViewController == self) {
         
         [self performSegueWithIdentifier:@"ToChapterList" sender:self];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"ToChapterList"]) {
+        ChapterListViewController *controller = (ChapterListViewController *)[segue destinationViewController] ;
+        controller.book=this.book;
     }
 }
 @end

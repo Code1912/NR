@@ -13,6 +13,8 @@
 #import "UITableView+Z.h"
 #import "UICollectionView+Z.h"
 #import "NSMutableArray+Z.h"
+#import "UIViewController+Z.h"
+#import "UIView+Z.h"
 @interface CategoryGather
 
 @end

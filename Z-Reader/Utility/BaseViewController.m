@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                      [UserSetting getIntance].titleColor, NSForegroundColorAttributeName,
                                                                      [UIFont fontWithName:@"Arial-Bold" size:0.0], NSFontAttributeName,
@@ -46,6 +47,10 @@
 {
  
 
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    //self.navigationController.navigationBarHidden = NO;
 }
 /*
 #pragma mark - Navigation
