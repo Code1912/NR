@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4FFA7483D379EB93819695ED'
-               BlueprintName = 'ASIHTTPRequest'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libASIHTTPRequest.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC320BF3B09D57852C0D12961DFE9A76"
+               BlueprintName = "ASIHTTPRequest"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libASIHTTPRequest.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

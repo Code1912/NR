@@ -18,11 +18,11 @@ PODS:
   - LKDBHelper (2.1.8):
     - FMDB
   - Reachability (3.2)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - TouchJSON (1.1)
-  - YYModel (0.9.9)
+  - YYModel (0.9.12)
 
 DEPENDENCIES:
   - ASIHTTPRequest
@@ -36,8 +36,8 @@ SPEC CHECKSUMS:
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   LKDBHelper: 1b55f67e44f34af8828b31aa36b36141fdde03a8
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
-  YYModel: 6e2f66abdc429b3f542fc525b262f41b62fc2ae2
+  YYModel: 33a27f41a995f4c36ff8178421bac9f221a9c7ea
 
 COCOAPODS: 0.39.0
