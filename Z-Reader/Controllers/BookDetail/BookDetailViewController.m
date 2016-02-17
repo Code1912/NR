@@ -15,8 +15,7 @@
 @end
 
 @implementation BookDetailViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     this.navigationItem.title = @"书籍简介";
     btnBack = [UIButton buttonWithType:UIButtonTypeCustom];
     btnBack.frame = CGRectMake(0, 0, 25, 25);
@@ -37,18 +36,16 @@
             [this.bookImgView sd_setImageWithURL:[this.book.imgUrl toURL]];
         }
         if ([this.book.summary length] > 300) {
-            this.bookInfoLabel.text = [[[@"     " concat:this.book.summary] substringWithRange:NSMakeRange(0, 250)] concat:@"......"];
-            ;
+            this.bookInfoLabel.text = [[[@"     " concat:this.book.summary] substringWithRange:NSMakeRange(0, 250)] concat:@"......"];;
         }
         else {
             this.bookInfoLabel.text = [@"     " concat:this.book.summary];
         }
         // NSLog(@"-----:%ld",[this.book.summary length]);
-        if(this.book.booktype==2)
-        {
-            this.btnStartRead.enabled=NO;
+        if (this.book.booktype == 2) {
+            this.btnStartRead.enabled = NO;
             [this.btnStartRead setTitle:@"收费小说" forState:UIControlStateNormal];
-            this.btnAddToBookrack.enabled=NO;
+            this.btnAddToBookrack.enabled = NO;
             [this.btnAddToBookrack setTitle:@"无法下载" forState:UIControlStateNormal];
         }
     }
@@ -76,8 +73,7 @@
 
     this.tableView.dataSource = this;
     this.tableView.delegate = this;
-    if(_book&&_book.booktype!=2)
-    {
+    if (_book && _book.booktype != 2) {
         [self doQueryDetail];
         [self doQueryChapterList];
     }

@@ -16,15 +16,14 @@
 #import "ChapterViewCell.h"
 #import "ChapterListResponse.h"
 #import "ChapterListViewController.h"
-@interface BookDetailViewController : BaseViewController<ASIHTTPRequestDelegate,UITableViewDataSource,UITableViewDelegate,LoadMoreDelegate>
-{
+@interface BookDetailViewController : BaseViewController<ASIHTTPRequestDelegate,UITableViewDataSource,UITableViewDelegate,LoadMoreDelegate> {
     UIButton *btnBack;
-    ChapterListResponse* chapterListInfo;
+    ChapterListResponse *chapterListInfo;
     UIView *tableHeader;
     UIView *tableFooter;
 }
 
- 
+
 @property (strong, nonatomic) IBOutlet UIView *root;
 - (IBAction)btnBackClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *bookImgView;
