@@ -204,8 +204,7 @@
 }
 
 - (NSInteger)tableView:(UITableView*)tableView
- numberOfRowsInSection:(NSInteger)section
-{
+ numberOfRowsInSection:(NSInteger)section {
     if (chapterListInfo.list.count > 20) {
         return 20;
     }
@@ -214,23 +213,22 @@
 
 //创建 cell
 - (UITableViewCell*)tableView:(UITableView*)tableView
-        cellForRowAtIndexPath:(NSIndexPath*)indexPath
-{
-    ChapterViewCell* cell = (ChapterViewCell*)[tableView
-        dequeueReusableCellWithIdentifier:cellReuseIdentifier
-                             forIndexPath:indexPath];
-    ChapterInfo* info = [chapterListInfo.list getByIndex:indexPath.row];
+        cellForRowAtIndexPath:(NSIndexPath*)indexPath {
+    ChapterViewCell *cell = (ChapterViewCell *) [tableView
+            dequeueReusableCellWithIdentifier:cellReuseIdentifier
+                                 forIndexPath:indexPath];
+    ChapterInfo *info = [chapterListInfo.list getByIndex:indexPath.row];
     cell.chapterLabel.text = info.text;
     cell.chapterLabel.textColor = [UserSetting getIntance].contentColor;
     return cell;
 }
+
 - (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 30.0f;
 }
 
-- (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section {
     if (chapterListInfo.list.count == 0) {
         return 0;
     }
@@ -238,8 +236,7 @@
     return 30;
 }
 
-- (void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(NSIndexPath*)indexPath
-{
+- (void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
@@ -247,17 +244,17 @@
         [cell setSeparatorInset:UIEdgeInsetsZero];
     }
 }
+
 - (CGFloat)tableView:(UITableView*)tableView
-    heightForRowAtIndexPath:(nonnull NSIndexPath*)indexPath
-{
+    heightForRowAtIndexPath:(nonnull NSIndexPath*)indexPath {
     //  NSLog(@"index:%d",indexPath.row);
     return 30;
 }
-- (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section
-{
+
+- (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section {
     if (!tableHeader) {
         //  tableHeader=[[UIView new]initWithFrame:CGRectMake(0,0, tableView.frame.size.width, 30)];
-        UILabel* label = [[UILabel new] init];
+        UILabel *label = [[UILabel new] init];
         label.frame = CGRectMake(0, 0, tableView.frame.size.width, 30);
         label.backgroundColor = [UserSetting getIntance].contentColor;
         label.textColor = [UIColor whiteColor];

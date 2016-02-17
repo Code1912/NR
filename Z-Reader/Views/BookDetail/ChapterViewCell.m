@@ -7,10 +7,12 @@
 //
 
 #import "ChapterViewCell.h"
-
+#import "UtilityDefine.h"
 @implementation ChapterViewCell
 -(void)awakeFromNib
 {
     self.chapterLabel.textColor=[UserSetting getIntance].titleColor;
+    self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.frame];
+    self.selectedBackgroundView.backgroundColor =MakeUIColor(204,204,204,0.3);
 }
 @end
