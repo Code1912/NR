@@ -17,25 +17,25 @@
 - (void)viewDidLoad
 {
 
-    novelList = [[List new] init];
+    novelList = [List new];
     btnSearch = [UIButton buttonWithType:UIButtonTypeCustom];
     btnSearch.frame = CGRectMake(0, 0, 30, 30);
     [btnSearch addTarget:self action:@selector(btnSearch_Click:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem new] initWithCustomView:btnSearch];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnSearch];
 
     btnBack = [UIButton buttonWithType:UIButtonTypeCustom];
     btnBack.frame = CGRectMake(0, 0, 25, 25);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem new] initWithCustomView:btnBack];
     [btnBack addTarget:self action:@selector(backBtn_Click:) forControlEvents:UIControlEventTouchUpInside];
 
-    txtSearch = [[UITextField new] init];
+    txtSearch = [UITextField new];
     txtSearch.font = [UIFont systemFontOfSize:11 weight:11];
     [txtSearch setBorderStyle:UITextBorderStyleRoundedRect]; //外框类型
     txtSearch.placeholder = @"搜索小说或作者"; //默认显示的字
     txtSearch.frame = CGRectMake(0, 0, _rootView.frame.size.width - 90, 25);
     self.navigationItem.titleView = txtSearch;
     txtSearch.text = [BookManager getQueryWord];
-    self.loadingView = [[LoadingView new] init];
+    self.loadingView = [LoadingView new];
     [self.rootView addSubview:self.loadingView];
 
     [self.novelListTableView registerNibClass:[SearchTableCellView class] withCellIdentifier:cellReuseIdentifier];

@@ -49,6 +49,7 @@
                         <outlet property="bookListView" destination="ZG3-N9-JVZ" id="6ZF-BN-dcl"/>
                         <outlet property="rootView" destination="wcK-an-pre" id="kUz-3F-aMJ"/>
                         <segue destination="fL7-2u-kb6" kind="push" identifier="ToKeyWordView" id="1HI-sr-VN7"/>
+                        <segue destination="oC1-vu-U5u" kind="push" identifier="ToRead" id="9QQ-26-wqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vt1-Ka-lDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,7 +106,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJ2-rX-o6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="-1087"/>
+            <point key="canvasLocation" x="868" y="-1919"/>
+        </scene>
+        <!--Read View Controller-->
+        <scene sceneID="69b-Sb-HgN">
+            <objects>
+                <viewController id="oC1-vu-U5u" customClass="ReadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bJ-FB-Twp"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBL-1S-w9I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iJR-1o-TBO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-Qz-ehR">
+                                <rect key="frame" x="51" y="34" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HBL-1S-w9I" firstAttribute="top" secondItem="1B1-Qz-ehR" secondAttribute="bottom" id="1cE-o9-Vp2"/>
+                            <constraint firstItem="1B1-Qz-ehR" firstAttribute="top" secondItem="5bJ-FB-Twp" secondAttribute="bottom" id="6WJ-0m-nIO"/>
+                            <constraint firstItem="1B1-Qz-ehR" firstAttribute="leading" secondItem="iJR-1o-TBO" secondAttribute="leadingMargin" constant="-20" id="7jx-TY-dKQ"/>
+                            <constraint firstItem="1B1-Qz-ehR" firstAttribute="leading" secondItem="iJR-1o-TBO" secondAttribute="leadingMargin" id="Kds-Tx-3Ys"/>
+                            <constraint firstItem="1B1-Qz-ehR" firstAttribute="top" secondItem="iJR-1o-TBO" secondAttribute="topMargin" id="MTm-mL-chi"/>
+                            <constraint firstItem="HBL-1S-w9I" firstAttribute="top" secondItem="1B1-Qz-ehR" secondAttribute="bottom" id="cId-rm-vTV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1B1-Qz-ehR" secondAttribute="trailing" constant="-20" id="nXI-qN-3Ow"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1B1-Qz-ehR" secondAttribute="trailing" id="y4S-mN-1vd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6WJ-0m-nIO"/>
+                                <exclude reference="Kds-Tx-3Ys"/>
+                                <exclude reference="y4S-mN-1vd"/>
+                                <exclude reference="1cE-o9-Vp2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="zVo-Hh-eiG"/>
+                    <connections>
+                        <outlet property="rootView" destination="iJR-1o-TBO" id="IQv-rB-O0D"/>
+                        <outlet property="webView" destination="1B1-Qz-ehR" id="4vW-9j-TQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hK-eD-pbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="-457"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="XHz-eE-bUf">

@@ -27,7 +27,7 @@ bool loaded=NO;
 {
     self.contentView.frame=CGRectMake(0, 0,  size.width, size.height);
     self.btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.loadingImgView=[[UIImageView new]init];
+    self.loadingImgView=[UIImageView new];
     [self.contentView addSubview:self.loadingImgView];
     [self.contentView addSubview:self.btn];
     

@@ -78,6 +78,13 @@
     }
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    NovelInfo *book = [[BookManager getBooks] getByIndex:indexPath.row];
+    if (self.navigationController.visibleViewController == self) {
+        [self performSegueWithIdentifier:@"ToRead" sender:self];
+    }
+}
 /*
 #pragma mark - Navigation
 

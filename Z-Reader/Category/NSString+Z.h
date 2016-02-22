@@ -12,10 +12,11 @@
 -(BOOL) isNullOrEmpty;
 -(BOOL) isNullOrWhiteSpaceEmpty;
 +(NSString *) empty;
-+(NSString *) format:(NSString*)format,...;
+
 -(NSURL*) toURL;
 -(NSURL*) toEncodeURL;
 -(NSString *) concat:(NSString *)str;
 +(BOOL) isNullOrEmpty:(NSString *)str;
 +(BOOL) isNullOrWhiteSpaceEmpty:(NSString *)str;
+-(NSMutableDictionary<NSString *, NSString*> *) getUrlArgs;
 @end

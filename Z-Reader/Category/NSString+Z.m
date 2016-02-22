@@ -45,17 +45,26 @@
 {
     return  @"";
 }
-+(NSString *) format:(NSString*)format,...
-{
-    va_list args;
-    va_start(args, format);
-    NSString* str=   [ [NSString new]initWithFormat:format,args ];
-    va_end(args);
-    return str;
-}
+
 -(NSString *) concat:(NSString *)str
 {
     return [NSString stringWithFormat:@"%@%@",self,str];
 }
- 
+
+-(NSMutableDictionary<NSString *, NSString*> *) getUrlArgs{
+    NSMutableDictionary<NSString *, NSString*> *arrayData = [NSMutableDictionary new];
+        NSRange range = [self rangeOfString:@"?"];
+
+        NSString *propertys = [self substringFromIndex:(int)(range.location+1)];
+
+        NSArray *subArray = [propertys componentsSeparatedByString:@"&"];
+
+        for(int j = 0 ; j < subArray.count; j++)
+        {
+            NSArray *dicArray = [subArray[j] componentsSeparatedByString:@"="];
+
+            [arrayData setObject:dicArray[1] forKey:dicArray[0]];
+        }
+    return arrayData;
+}
 @end

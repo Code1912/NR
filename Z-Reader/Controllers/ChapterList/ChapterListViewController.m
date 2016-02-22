@@ -16,7 +16,7 @@ ChapterListResponse * chapterRes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    chapterRes=[[ChapterListResponse new]init];
+    chapterRes=[ChapterListResponse new];
     chapterRes.list=ListNew;
     
    //[[self navigationController] setNavigationBarHidden:YES animated:NO];
@@ -103,7 +103,6 @@ ChapterListResponse * chapterRes;
 {
     [self.navigationController popViewControllerAnimated:YES];
     this.navigationController.navigationBar.hidden=NO;
-   
 }
 
 -(void)viewWillDisappear:(BOOL)animated

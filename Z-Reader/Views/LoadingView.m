@@ -14,13 +14,13 @@
 {
     if (self=[super init]) {
         //加载动画图片
-        loadingImageView=[[UIImageView new] init];
+        loadingImageView=[UIImageView new];
         NSData *gifImg = [NSData dataWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"loading.gif" ofType:Nil inDirectory:@"Theme/Day"]];
         loadingImageView.image = [UIImage sd_animatedGIFWithData:gifImg];
         [loadingImageView setBackgroundColor:[UIColor clearColor]];
         
         //加载 遮罩
-        maskView=[[UIView new] init];
+        maskView=[UIView new];
         [maskView setBackgroundColor:[UIColor whiteColor]];
         [maskView setAlpha:0.5];
         //加载显示文字
@@ -39,7 +39,7 @@
 }
 +(instancetype)initView
 {
-    return [[LoadingView new]init];
+    return [LoadingView new];
 }
 -(void)layoutSubviews{
     if(self.superview)

@@ -19,7 +19,7 @@
     this.navigationItem.title = @"书籍简介";
     btnBack = [UIButton buttonWithType:UIButtonTypeCustom];
     btnBack.frame = CGRectMake(0, 0, 25, 25);
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem new] initWithCustomView:btnBack];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnBack];
     [btnBack addTarget:self action:@selector(btnBack_Click) forControlEvents:UIControlEventTouchUpInside];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -253,8 +253,8 @@
 
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section {
     if (!tableHeader) {
-        //  tableHeader=[[UIView new]initWithFrame:CGRectMake(0,0, tableView.frame.size.width, 30)];
-        UILabel *label = [[UILabel new] init];
+        //  tableHeader=[[UIView alloc]initWithFrame:CGRectMake(0,0, tableView.frame.size.width, 30)];
+        UILabel *label = [UILabel new];
         label.frame = CGRectMake(0, 0, tableView.frame.size.width, 30);
         label.backgroundColor = [UserSetting getIntance].contentColor;
         label.textColor = [UIColor whiteColor];

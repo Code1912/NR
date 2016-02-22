@@ -30,20 +30,20 @@
     _collectionView.dataSource=self;
     _collectionView.delegate=self;
     _collectionView.collectionViewLayout=flowLayout;
-     self.loadingView=[[LoadingView new]init];
+     self.loadingView=[LoadingView new];
     [_rootView addSubview:self.loadingView];
      
     btnSearch=[UIButton buttonWithType:UIButtonTypeCustom];
     btnSearch.frame = CGRectMake(0, 0, 30, 30);
     [btnSearch addTarget:self action:@selector(doSearch) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem new]initWithCustomView:btnSearch];
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:btnSearch];
     
     btnBack=[UIButton buttonWithType:UIButtonTypeCustom];
     btnBack.frame = CGRectMake(0, 0, 25, 25);
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem new]initWithCustomView:btnBack];
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:btnBack];
      [btnBack addTarget:self action:@selector(doBack) forControlEvents:UIControlEventTouchUpInside];
     
-    txtSearch=[[UITextField new]init];
+    txtSearch=[UITextField new];
     txtSearch.font=[UIFont systemFontOfSize:11 weight:11];
     [txtSearch setBorderStyle:UITextBorderStyleRoundedRect]; //外框类型
     txtSearch.placeholder = @"搜索小说或作者"; //默认显示的字
@@ -69,7 +69,7 @@
     NSMutableArray<WordEntity*>* array1 = [WordEntity searchWithWhere:@" wordType=0 " orderBy:@"dateTime desc" offset:0 count:8];
     if(searchHistoryList==nil)
     {
-        searchHistoryList=[[NSMutableArray new] init];
+        searchHistoryList=[NSMutableArray new];
     }
     
     [searchHistoryList removeAllObjects];
@@ -83,7 +83,7 @@
     NSMutableArray<WordEntity*>* array = [WordEntity searchWithWhere:@" wordType=1 " orderBy:@"dateTime desc" offset:0 count:100];
     if(hotWordList==nil)
     {
-        hotWordList=[[NSMutableArray new] init];
+        hotWordList=[NSMutableArray new];
     }
     
     [hotWordList removeAllObjects];
@@ -112,7 +112,7 @@
         {
             [searchHistoryList removeAtIndex:searchHistoryList.count-1];
         }
-        WordEntity * word=[[WordEntity new]init];
+        WordEntity * word=[WordEntity new];
         word.word=[txtSearch.text trim];
         [word saveToDB];
     }
@@ -246,7 +246,7 @@
     }
  
  
-    cell.labelTitle.backgroundColor= [[UIColor new]initWithRed:240./255.0 green:240.0/255.0  blue:240.0/255.0  alpha:1];;
+    cell.labelTitle.backgroundColor= [[UIColor alloc]initWithRed:240./255.0 green:240.0/255.0  blue:240.0/255.0  alpha:1];;
     cell.labelTitle.textColor=[UserSetting getIntance].titleColor;
     cell.labelTitle.font=[UIFont systemFontOfSize:11 weight:11];
     cell.labelNumber.hidden=(indexPath.section==0);

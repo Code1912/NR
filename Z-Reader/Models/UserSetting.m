@@ -14,10 +14,10 @@ static UserSetting* intance=nil;
 {
     if(self=[super init])
     {
-        self.mainColor=[[UIColor new] initWithRed:71/255.0 green:179/255.0 blue:168/255.0 alpha:1];
+        self.mainColor=[[UIColor alloc] initWithRed:71/255.0 green:179/255.0 blue:168/255.0 alpha:1];
         self.backColor=[UIColor whiteColor];
-        self.titleColor=[[UIColor new]initWithRed:51/255.0 green:51/255.0  blue:51/255.0  alpha:1];
-        self.contentColor=[[UIColor new]initWithRed:102/255.0 green:102/255.0  blue:102/255.0  alpha:1];
+        self.titleColor=[[UIColor alloc]initWithRed:51/255.0 green:51/255.0  blue:51/255.0  alpha:1];
+        self.contentColor=[[UIColor alloc]initWithRed:102/255.0 green:102/255.0  blue:102/255.0  alpha:1];
         self.headerFontSize=17;
         self.titleFontSize=12;
         self.contentFontSize=10;
@@ -37,7 +37,7 @@ static UserSetting* intance=nil;
             {
                 return ;
             }
-            intance=[[UserSetting new]init];
+            intance=[UserSetting new];
             NSMutableArray<UserSetting*>* array = [UserSetting searchWithWhere:@"" orderBy:@"" offset:0 count:100];
             if(array==nil||array.count==0)
             {
@@ -91,7 +91,7 @@ static UserSetting* intance=nil;
 }
 +(UIImageView*) imgViewWithName:(NSString *)name ofType:(NSString* __nullable)ext;
 {
-    UIImageView  *imgView=[[UIImageView new]init];
+    UIImageView  *imgView=[UIImageView new];
     imgView.image= [UserSetting imgWithName:name ofType:ext];
     return imgView;
 }
@@ -118,6 +118,4 @@ static UserSetting* intance=nil;
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:ext inDirectory:[NSString stringWithFormat:@"Theme/%@",[UserSetting getIntance].theme]];
     return path;
 }
-
- 
 @end

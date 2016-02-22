@@ -13,6 +13,6 @@
 {
     self.chapterLabel.textColor=[UserSetting getIntance].titleColor;
     self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.frame];
-    self.selectedBackgroundView.backgroundColor =MakeUIColor(204,204,204,0.3);
+    self.selectedBackgroundView.backgroundColor =MakeUIColor(96,96,96,0.5);
 }
 @end
