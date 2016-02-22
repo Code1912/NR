@@ -7,13 +7,12 @@ var methodArray={
     {
         document.getElementById("content").innerHTML=str;
         window.location.href="ios:test?abc=dsf";
-        return 1;
+        return  document.getElementById("content").innerHTML;
     },
     setBackground:function (str)
     {
-        //document.body.style.backgroundImage=str;
-  alert( document.body.style.backgroundImage)
-        return document.body.style.backgroundImage="url('"+str+"')";
+        document.body.style.backgroundImage="url('"+str+"')";
+        return document.body.style.backgroundImage
     }
 
 }

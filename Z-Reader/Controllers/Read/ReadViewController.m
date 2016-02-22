@@ -19,16 +19,18 @@
     this.rootView.backgroundColor = [UIColor colorWithPatternImage:[UserSetting imgWithName:@"readback"]];
     this.navigationController.navigationBar.hidden=YES;
     this.webView.delegate=this;
+    this.webView.scrollView.bounces=NO;
     [this.webView loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle]URLForResource:@"content" withExtension:@"html" subdirectory:@"Web"]]];
     // Do any additional setup after loading the view.
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [this.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"utility" withExtension:@"js" subdirectory:@"Web"] encoding:NSUTF8StringEncoding error:nil]];
-
-    [this callJSFunc:@"updateContent" withArgs:@"123123"];
-   // NSString  * path=[UserSetting imgPathWithName:@"readback" ofType:@"png"];
-    //NSLog(path);
-    //[this callJSFunc:@"setBackground" withArgs:path];
+    NSURL  *url= [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"txt" subdirectory:@"Web"];
+    NSString* myString = [NSString stringWithContentsOfURL:url usedEncoding:NULL error:NULL];
+    [this callJSFunc:@"updateContent" withArgs:myString];
+    NSString  * path=[UserSetting imgPathWithName:@"readback" ofType:@"png"];
+    NSLog(path);
+    [this callJSFunc:@"setBackground" withArgs:path];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
@@ -56,11 +58,12 @@
 
 -(void)callJSFunc:(NSString *)funcName withArgs:(NSString * )args {
 
-  //  NSLog([[NSString alloc]
-   ////         initWithFormat:@"callFunc('%@','%@');", funcName, args]);
-    NSString *path = [this.webView stringByEvaluatingJavaScriptFromString:[[NSString alloc]
-            initWithFormat:@"callFunc('%@','%@');", funcName, args]];
-     NSLog(@"%@",path);
+
+    NSString *callStr = [[NSString alloc]
+            initWithFormat:@"callFunc(\"%@\",\"%@\");", funcName, args];
+
+    NSString *path = [this.webView stringByEvaluatingJavaScriptFromString:callStr];
+    NSLog(@"%@", path);
 }
 -(void)test:(NSMutableDictionary<NSString*,NSString*> *) args{
     for (NSString* key in args) {
