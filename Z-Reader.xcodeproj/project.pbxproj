@@ -12,6 +12,7 @@
 		66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A1F1C4B8945005301AB /* HotWordHeaderView.xib */; };
 		66236A251C4B89AE005301AB /* KeyWordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66236A231C4B89AE005301AB /* KeyWordViewCell.m */; };
 		66236A261C4B89AE005301AB /* KeyWordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66236A241C4B89AE005301AB /* KeyWordViewCell.xib */; };
+		6650CBC11C7AD00000165B54 /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 6650CBC01C7AD00000165B54 /* Web */; };
 		6658C9DF1C4BD6E600DD95F0 /* UILabel+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9DE1C4BD6E600DD95F0 /* UILabel+Z.m */; };
 		6658C9E21C4BD6FC00DD95F0 /* UIButton+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9E11C4BD6FC00DD95F0 /* UIButton+Z.m */; };
 		6658C9E51C4BD71300DD95F0 /* UIView+Z.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658C9E41C4BD71300DD95F0 /* UIView+Z.m */; };
@@ -88,6 +89,7 @@
 		66236A231C4B89AE005301AB /* KeyWordViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewCell.m; sourceTree = "<group>"; };
 		66236A241C4B89AE005301AB /* KeyWordViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyWordViewCell.xib; sourceTree = "<group>"; };
 		66236A2A1C4BBB09005301AB /* UtilityDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilityDefine.h; sourceTree = "<group>"; };
+		6650CBC01C7AD00000165B54 /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
 		6658C9DD1C4BD6E600DD95F0 /* UILabel+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Z.h"; sourceTree = "<group>"; };
 		6658C9DE1C4BD6E600DD95F0 /* UILabel+Z.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Z.m"; sourceTree = "<group>"; };
 		6658C9E01C4BD6FC00DD95F0 /* UIButton+Z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Z.h"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		66BF71831C40036A00987729 /* Z-Reader */ = {
 			isa = PBXGroup;
 			children = (
+				6650CBC01C7AD00000165B54 /* Web */,
 				66BF720F1C40052F00987729 /* Theme */,
 				66BF71B71C40051800987729 /* Category */,
 				66BF71C11C40051800987729 /* Controllers */,
@@ -590,6 +593,7 @@
 				66BF71941C40036A00987729 /* LaunchScreen.storyboard in Resources */,
 				66ED08471C4D3A4C00C376F7 /* ChapterViewCell.xib in Resources */,
 				66236A211C4B8945005301AB /* HotWordHeaderView.xib in Resources */,
+				6650CBC11C7AD00000165B54 /* Web in Resources */,
 				66A5AA4E1C46768000FA824C /* BookrackCell.xib in Resources */,
 				66BF720E1C40051800987729 /* SearchTableCellView.xib in Resources */,
 				66236A261C4B89AE005301AB /* KeyWordViewCell.xib in Resources */,
