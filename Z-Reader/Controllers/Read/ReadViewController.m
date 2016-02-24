@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [this.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"utility" withExtension:@"js" subdirectory:@"Web"] encoding:NSUTF8StringEncoding error:nil]];
+   // [this.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"utility" withExtension:@"js" subdirectory:@"Web"] encoding:NSUTF8StringEncoding error:nil]];
     NSURL  *url= [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"txt" subdirectory:@"Web"];
     NSString* myString = [NSString stringWithContentsOfURL:url usedEncoding:NULL error:NULL];
     [this callJSFunc:@"updateContent" withArgs:myString];
