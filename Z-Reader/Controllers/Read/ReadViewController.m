@@ -49,7 +49,10 @@
         {
             [this test:args];
         }
-
+        if([method isEqualToString:@"log"])
+        {
+            [this log:args];
+        }
         return NO;
     }
 
@@ -64,6 +67,12 @@
 
     NSString *path = [this.webView stringByEvaluatingJavaScriptFromString:callStr];
     NSLog(@"%@", path);
+}
+
+-(void)log:(NSMutableDictionary<NSString*,NSString*> *) args{
+    for (NSString* key in args) {
+        NSLog([args objectForKey:key]);
+    }
 }
 -(void)test:(NSMutableDictionary<NSString*,NSString*> *) args{
     for (NSString* key in args) {

@@ -1,87 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en"  >
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link href="css/font-awesome.min.css"  rel="stylesheet"/>
-
-    <style type="text/css">
-        body{
-            font-family: Arial;
-        }
-        #content{
-            padding: 0px 10px;
-            font-size: 14px;
-        }
-        body,html{
-            margin: 0px;
-            padding: 0px;
-            height: 100%;
-            width: 100%;
-        }
-        .footer{ height: 60px;
-            position: fixed; bottom: 0px;  width: 100%;   background-color: black; opacity: 0.7;
-        }
-        .toolbar{
-            list-style-type: none; margin: 0px; padding: 0px;
-        }
-        .toolbar li i{
-            font-size:2em;
-        }
-        .toolbar li{
-            float: left;
-            width: 25%;
-            font-size: 10px;
-            color:white;
-            text-align: center;
-            vertical-align: middle;
-            padding-bottom: 5px;
-            padding-top: 5px;
-
-        }
-        .setting{
-            moz-user-select: -moz-none;
-            -moz-user-select: none;
-            -o-user-select:none;
-            -khtml-user-select:none;
-            -webkit-user-select:none;
-            -ms-user-select:none;
-            user-select:none;
-            position: fixed; bottom: 0px;   height: 200px; background-color: black; opacity: 0.9;
-            padding: 0.5em 1em ;
-            left: 0px; right: 0px;
-            text-align: center;
-            vertical-align: middle;
-
-        }
-        .font-setting{
-            height: 2em;
-            border: 1px solid white;
-            border-radius: 0.2em;
-
-        }
-        .font-setting>.btn{
-            width: 50%; color: white;
-            height: 100%;
-            float: left;
-            text-align: center;
-            line-height: 2em;
-        }
-        .font-setting>.btn-touch{
-            width: 50%;
-            height: 100%;
-            float: left;
-            line-height: 2em;
-            background-color: green;
-        }
-    </style>
+    <link href="css/style.css"  rel="stylesheet"/>
 </head>
-<body    style="background: url('../Theme/Day/readback.png')">
+<body ng-app="reader" ng-controller="HomeCtrl" class="color1" body-touch="bodyTouch($event)">
 
-<article  id="content"  >
+<article  id="content"   class="color1">
 
 </article>
-<div class="footer ">
+<div class="footer">
     <ul  class="toolbar" >
         <li id="chapterList"><i class="fa fa-list "></i>
             <p>目录</p></li>
@@ -90,15 +22,48 @@
         <li id="light"><i class="fa fa-moon-o"></i><p>夜间</p></li>
     </ul>
 </div>
-
-<div class="setting ">
-<div   class="font-setting">
-    <div   class="btn">A-</div>
-
-    <div   class="btn">   <div class="" style="float: left;height: 100%; width: 1px;  border-left:1px solid white;"></div>A+</div>
-</div>
+<div class="setting setting-show">
+    <div class="row">
+        <ul class="common-ul">
+            <li  class="li-20">
+                <div class="color-picker-box check" ng-class="colorClass(1)">
+                  <div class="color-picker color1" ng-touch="chooseColor(1)" no-bubble="true"></div>
+                </div>
+            </li>
+            <li  class="li-20">
+                <div class="color-picker-box "  ng-class="colorClass(2)">
+                    <div class="color-picker color2" ng-touch="chooseColor(2)"  no-bubble="true"></div>
+                </div>
+            </li>
+            <li  class="li-20">
+                <div class="color-picker-box "  ng-class="colorClass(3)">
+                    <div class="color-picker color4" ng-touch="chooseColor(3)"  no-bubble="true"></div>
+                </div>
+            </li>
+            <li  class="li-20">
+                <div class="color-picker-box "  ng-class="colorClass(4)">
+                    <div class="color-picker color5" ng-touch="chooseColor(4)"  no-bubble="true"></div>
+                </div>
+            </li>
+            <li  class="li-20">
+                <div class="color-picker-box "  ng-class="colorClass(5)">
+                    <div class="color-picker color5" ng-touch="chooseColor(5)"  no-bubble="true"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <ul class="common-ul">
+            <li class="li-20 ul-h-30 down-uncheck" > 预读设置<hr class="right-border-black"/></li>
+            <li class="li-20 ul-h-30 down-check" ng-touch="chooseDown(-1)" no-bubble="true" ng-class="downClass(-1)">不预读<hr class="right-border-black"/></li>
+            <li class="li-20 ul-h-30 down-uncheck" ng-touch="chooseDown(5)" no-bubble="true"  ng-class="downClass(5)">5章<hr class="right-border-black"/></li>
+            <li class="li-20 ul-h-30 down-uncheck" ng-touch="chooseDown(10)" no-bubble="true" ng-class="downClass(10)">10章<hr class="right-border-black"/></li>
+            <li class="li-20 ul-h-30 down-uncheck" ng-touch="chooseDown(20)" no-bubble="true" ng-class="downClass(20)">20章<hr class="right-border-black"/></li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
-<script src="jquery-1.12.1.min.js"></script>
-<script src="utility.js"></script>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/utility.js"></script>
