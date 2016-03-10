@@ -6,6 +6,7 @@ body{
     padding: 0px 10px;
     font-size: 14px;
     top:0px;
+    position: absolute;
 }
 body,html{
     margin: 0px;
@@ -23,6 +24,7 @@ body,html{
     -webkit-animation:navigation-show 0.3s;
     -o-animation:navigation-show 0.3s;
     animation:navigation-show 0.3s;
+    z-index: 900;
 }
 .footer-show
 {    height: 60px;
@@ -64,6 +66,7 @@ body,html{
     left: 0px; right: 0px;
     text-align: center;
     vertical-align: middle;
+    z-index: 901;
 }
 .setting-show
 {
@@ -71,13 +74,14 @@ body,html{
     -o-animation:setting-show 0.3s;
     animation:setting-show 0.3s;
     height: 200px;
+    display:block;
 }
 .setting-hide
 {
     -webkit-animation:setting-hide 0.3s;
     -o-animation:setting-hide 0.3s;
     animation:setting-hide 0.3s;
-    height: 0;
+    display: none;
 }
 .font-setting{
     height: 2em;
@@ -261,6 +265,31 @@ body,html{
 .right-border-black
 {
     height: 100%; float: right; width: 1px;background-color: black;margin: 0px; border: none
+}
+
+.touch-block
+{
+    position: absolute; background-color: #b2dba1; height: 33%;top: 33%;left: 30%;  width: 40%;
+    z-index: 801;
+}
+
+.up-block
+{
+    position: absolute;
+    background-color: transparent;opacity: 0.5;
+    height:50%;width: 100%;
+    top:0px;
+    z-index: 800;
+}
+.down-block
+{
+    position: absolute;
+    background-color: transparent;opacity: 0.3;
+    color: white;
+    height:50%;
+    width: 100%;
+    bottom: 0px;
+    z-index: 800;
 }
 @-webkit-keyframes footer-show /* Safari 和 Chrome */
 {

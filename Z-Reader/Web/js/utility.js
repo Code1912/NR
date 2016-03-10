@@ -86,6 +86,7 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
 
     $scope.footerDisplay=false;
     $scope.settingDisplay=false;
+    $scope.articleStyle={top:0}
     $scope.setting={
         color:1
         ,read_class:"color1"
@@ -95,40 +96,15 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
     };
 
     $scope.bodyTouch=function(event) {
-       // $scope.settingDisplay=!    $scope.settingDisplay;
-        var e=event||window.event;
-        var y=0;
-        if(!e.touches||e.touches.length==0)
-        {
-            y= e.pageY;
-        }
-        //return;
-        else {
-            y=e.touches[0].clientY;
-        }
-        callDevice("log","y="+y);
-        if(y<(screen.height/3))
-        {
-           return;
-        }
-        if(y>=(screen.height/3)&&y<=(screen.height*2/3))
-        {
-            console.log("test");
-            if( $scope.footerDisplay|| $scope.settingDisplay)
-            {
-                $scope.footerDisplay=false;
-                $scope.settingDisplay=false;
-                return;
-            }
-            if(!$scope.footerDisplay)
-            {
-                $scope.footerDisplay=true;
-            }
+        // $scope.settingDisplay=!    $scope.settingDisplay;
+
+        if ($scope.footerDisplay || $scope.settingDisplay) {
+            $scope.footerDisplay = false;
+            $scope.settingDisplay = false;
             return;
         }
-        if(y>(screen.height*2/3))
-        {
-            return;
+        if (!$scope.footerDisplay) {
+            $scope.footerDisplay = true;
         }
     }
 
@@ -158,13 +134,29 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
     {
       return  $scope.setting.down_count ===count?"li-20 ul-h-30 down-check":"li-20 ul-h-30 down-uncheck"
     }
+
     $scope.navigationTouch= function (index) {
-        $scope.footerDisplay = true;
+        $scope.footerDisplay = false;
         if (index === 2) {
             $scope.settingDisplay = true;
         }
     }
 
+    $scope.pageUp= function () {
+        var height = $("#content").height();
+        if ($scope.articleStyle.top === 0) {
+            return;
+        }
+        $scope.articleStyle.top += screen.height;
+    }
+
+    $scope.pageDown= function () {
+        var height = $("#content").height();
+        if (Math.abs($scope.articleStyle.top-screen.height)>height) {
+            return;
+        }
+        $scope.articleStyle.top -= screen.height;
+    }
     function  stopFunc()
     {
         if (window.event.stopPropagation) {
