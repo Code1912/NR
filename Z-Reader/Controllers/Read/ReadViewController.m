@@ -30,7 +30,13 @@
     [this callJSFunc:@"updateContent" withArgs:myString];
     NSString  * path=[UserSetting imgPathWithName:@"readback" ofType:@"png"];
     NSLog(path);
+    this.webView.scrollView.bounces=NO;
+    this.webView.scrollView.scrollEnabled=false;
+    this.webView.scrollView.showsHorizontalScrollIndicator=false;
+    this.webView.scrollView.showsVerticalScrollIndicator=false;
     [this callJSFunc:@"setBackground" withArgs:path];
+    
+    
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
