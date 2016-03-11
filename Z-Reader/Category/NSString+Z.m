@@ -62,8 +62,10 @@
         for(int j = 0 ; j < subArray.count; j++)
         {
             NSArray *dicArray = [subArray[j] componentsSeparatedByString:@"="];
-
+           if(dicArray.count>1)
+           {
             [arrayData setObject:dicArray[1] forKey:dicArray[0]];
+           }
         }
     return arrayData;
 }

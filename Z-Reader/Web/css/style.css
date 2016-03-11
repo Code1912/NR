@@ -6,13 +6,64 @@ body{
     padding: 0px 10px;
     font-size: 14px;
     top:0px;
-    position: absolute;
+    position: relative;
 }
-body,html{
-    margin: 0px;
+ html{
+    margin:0px;
     padding: 0px;
     height: 100%;-webkit-user-select:none;
     width: 100%;
+}
+
+body{
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 100%;-webkit-user-select:none;
+
+    width: 100%;
+}
+#title
+{
+    position: fixed;
+    top: 0px; width: 100%;
+    z-index: 803;
+    height: 20px;
+}
+.header{
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+
+    z-index: 900;
+}
+.back{
+    height: 25px;width: 25px; margin-top: 20px; margin-left: 20px;
+    background-image: url('../../Theme/Day/back.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+ .header-hide
+  {
+      -webkit-animation:header-hide 0.5s;
+      -o-animation:header-hide 0.5s;
+      animation:header-hide 0.5s;
+     height: 60px;
+     top:-60px;
+  }
+.header-show
+{
+    -webkit-animation:header-show 0.5s;
+    -o-animation:header-show 0.5s;
+    animation:header-show 0.5s;
+    height: 60px;
+    top:0px;
 }
 .footer{
 
@@ -21,20 +72,22 @@ body,html{
     width: 100%;
     background-color: black;
     opacity: 0.7;
-    -webkit-animation:navigation-show 0.3s;
-    -o-animation:navigation-show 0.3s;
-    animation:navigation-show 0.3s;
+
     z-index: 900;
 }
 .footer-show
 {    height: 60px;
- 
+    -webkit-animation:footer-show 0.5s;
+    -o-animation:footer-show 0.5s;
+    animation:footer-show 0.5s;
     display: block;
 }
 .footer-hide
-{    height:0px;
-
-    display: none;
+{
+    -webkit-animation:footer-hide 0.5s;
+    -o-animation:footer-hide 0.5s;
+    animation:footer-hide 0.5s;
+    height: 0px;
 }
 .toolbar{
     list-style-type: none; margin: 0px; padding: 0px;
@@ -210,7 +263,7 @@ body,html{
 {   background-color: #e0bc89;
 
     background-image: url('../../Theme/Day/readback.png') ;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%
 }
 .color2
@@ -311,4 +364,14 @@ body,html{
 {
     from {height: 200px;opacity:0.7}
     to {height: 0px;opacity: 0}
+}
+@-webkit-keyframes header-show /* Safari 和 Chrome */
+{
+    from {top: -60px;opacity: 0.3}
+    to {   top: 0px;opacity:0.7}
+}
+@-webkit-keyframes header-hide /* Safari 和 Chrome */
+{
+    from {top: 0px;}
+    to {top: -60px;}
 }

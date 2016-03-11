@@ -59,12 +59,20 @@
         {
             [this log:args];
         }
+        if([method isEqualToString:@"back"])
+        {
+            [this backToMain];
+        }
         return NO;
     }
 
     return YES;
 }
-
+- (void)backToMain
+{
+    [this.navigationController popViewControllerAnimated:YES];
+    this.navigationController.navigationBar.hidden=NO;
+}
 -(void)callJSFunc:(NSString *)funcName withArgs:(NSString * )args {
 
 

@@ -84,7 +84,7 @@ app.directive("ngHoverBg",function($parse){
 });
 app.controller("HomeCtrl",["$scope", function ($scope) {
 
-    $scope.footerDisplay=false;
+    $scope.toolbarDisplay=false;
     $scope.settingDisplay=false;
     $scope.articleStyle={top:0}
     $scope.setting={
@@ -94,17 +94,18 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
         ,down_count:-1
         ,auto_light:false 
     };
-
+    $scope.backTouch=function() {
+         callDevice("back");
+    }
     $scope.bodyTouch=function(event) {
         // $scope.settingDisplay=!    $scope.settingDisplay;
 
-        if ($scope.footerDisplay || $scope.settingDisplay) {
-            $scope.footerDisplay = false;
-            $scope.settingDisplay = false;
+        if ($scope.toolbarDisplay || $scope.settingDisplay) {
+            hideSetting();
             return;
         }
-        if (!$scope.footerDisplay) {
-            $scope.footerDisplay = true;
+        if (!$scope.toolbarDisplay) {
+            $scope.toolbarDisplay = true;
         }
     }
 
@@ -136,26 +137,34 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
     }
 
     $scope.navigationTouch= function (index) {
-        $scope.footerDisplay = false;
+        $scope.toolbarDisplay = false;
         if (index === 2) {
             $scope.settingDisplay = true;
         }
     }
 
     $scope.pageUp= function () {
+        hideSetting();
         var height = $("#content").height();
         if ($scope.articleStyle.top === 0) {
+            callDevice("up")
             return;
         }
         $scope.articleStyle.top += screen.height;
     }
 
     $scope.pageDown= function () {
+        hideSetting();
         var height = $("#content").height();
         if (Math.abs($scope.articleStyle.top-screen.height)>height) {
+            callDevice("next")
             return;
         }
         $scope.articleStyle.top -= screen.height;
+    }
+    function hideSetting() {
+        $scope.toolbarDisplay = false;
+        $scope.settingDisplay = false;
     }
     function  stopFunc()
     {
