@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "ChapterListViewController.h"
 @interface ReadViewController : BaseViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UIView *rootView;
-
+@property (weak, nonatomic) NovelInfo * book;
 @end

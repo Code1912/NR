@@ -43,7 +43,7 @@ body{
     z-index: 900;
 }
 .back{
-    height: 25px;width: 25px; margin-top: 20px; margin-left: 20px;
+    height: 25px;width: 25px; margin-top: 27px; margin-left: 20px;
     background-image: url('../../Theme/Day/back.png') ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -259,26 +259,26 @@ body{
 {
     width: 30px;height: 30px; border-radius: 15px;
 }
-.color1
+.color0
 {   background-color: #e0bc89;
 
     background-image: url('../../Theme/Day/readback.png') ;
     background-repeat: no-repeat;
-    background-size: 100% 100%
+    background-size: 100% 100%;
 }
-.color2
+.color1
 {
     background-color: #f1e2c6;
 }
-.color3
+.color2
 {
     background-color: #c2e0c6;
 }
-.color4
+.color3
 {
     background-color: #ebebeb;
 }
-.color5
+.color4
 {
     background-color: #dfbfbf;
 }

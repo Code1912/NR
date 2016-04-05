@@ -24,6 +24,9 @@ static UserSetting* intance=nil;
         self.isNightMode=false;
         self.headerColor=[UIColor whiteColor];
         self.theme=@"Day";
+        self.readSize=13;
+        self.readColor=0;
+        self.downCount=5;
     }
     return self;
 }
@@ -58,6 +61,12 @@ static UserSetting* intance=nil;
                 intance.isNightMode=temp.isNightMode;
                 intance.backColor=temp.backColor;
                 intance.theme=temp.theme;
+                intance.readColor=temp.readColor;
+                intance.downCount=temp.downCount;
+                if(intance.readSize>0)
+                {
+                    intance.readSize=temp.readSize;
+                }
                 if(intance.theme==nil)
                 {
                     intance.theme=@"Day";

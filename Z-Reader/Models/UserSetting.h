@@ -22,6 +22,9 @@
 @property(nonatomic) NSInteger contentFontSize;
 @property(nonatomic) BOOL isNightMode;
 @property(nonatomic) NSString* theme;
+@property(nonatomic) NSInteger * readColor;
+@property(nonatomic) NSInteger * readSize;
+@property(nonatomic) NSInteger * downCount;
 +(UserSetting *)getIntance;
 +(void)save;
 +(NSString*) imgPathWithName:(NSString *)name ofType:(NSString* __nullable)ext;

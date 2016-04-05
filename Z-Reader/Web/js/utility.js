@@ -86,13 +86,14 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
 
     $scope.toolbarDisplay=false;
     $scope.settingDisplay=false;
-    $scope.articleStyle={top:0}
+    $scope.articleStyle={top:0,fontSize:13}
     $scope.setting={
-        color:1
-        ,read_class:"color1"
+         readColor:0
+        ,readClass:"color1"
         ,light:10
-        ,down_count:-1
-        ,auto_light:false 
+        ,downCount:-1
+        ,readSize:13
+        ,autoLight:false
     };
     $scope.backTouch=function() {
          callDevice("back");
@@ -110,30 +111,33 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
     }
 
     $scope.chooseColor= function (color) {
-        $scope.setting.color=color;
-        $scope.setting.read_class="color"+color; 
+        $scope.setting.readColor=color;
+        $scope.setting.readClass="color"+color;
+        callDevice("property",{readColor:color});
     }
+
     $scope.colorTouch= function () {
-        $scope.setting.auto_light=false;
+        $scope.setting.autoLight=false;
     }
 
     $scope.autoLight= function () { 
-        $scope.setting.auto_light=!$scope.setting.auto_light;
+        $scope.setting.autoLight=!$scope.setting.autoLight;
     }
 
     $scope.chooseDown=function(count)
     {
-        $scope.setting.down_count =count;
+        $scope.setting.downCount =count;
+        callDevice("property",{downCount:count});
     }
 
     $scope.colorClass=function(color)
     {
-        return $scope.setting.color===color?'color-picker-box check':'color-picker-box uncheck';
+        return $scope.setting.readColor===color?'color-picker-box check':'color-picker-box uncheck';
     }
 
     $scope.downClass=function(count)
     {
-      return  $scope.setting.down_count ===count?"li-20 ul-h-30 down-check":"li-20 ul-h-30 down-uncheck"
+      return  $scope.setting.downCount ===count?"li-20 ul-h-30 down-check":"li-20 ul-h-30 down-uncheck"
     }
 
     $scope.navigationTouch= function (index) {
@@ -141,6 +145,11 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
         if (index === 2) {
             $scope.settingDisplay = true;
         }
+        else if(index==1){
+            $scope.settingDisplay = true;
+            callDevice("list");
+        }
+
     }
 
     $scope.pageUp= function () {
@@ -175,23 +184,48 @@ app.controller("HomeCtrl",["$scope", function ($scope) {
 
     function  callDevice(name,params)
     {
-        window.location.href="ios:"+name+"?"+params;
+        var array=[];
+        if(params)
+        {
+            for(var key in params)
+            {
+                array.push(key+"="+params[key]);
+            }
+        }
+        window.location.href="ios:"+name+"?"+array.join("&");
     }
 }]);
 var methodArray={
     updateContent:function (str)
     {
         $("#content").html(str);
-        window.location.href="ios:test?abc=dsf";
-       // return  document.getElementById("content").innerHTML;
     },
     setBackground:function (str)
     {
-        //$("body").css({"background":"url('"+str+"') no-repeat"});
-        //$("body").css({"background-size":"100% 100%"});
-        //return document.body.style.backgroundImage
-    }
 
+    },
+    setProperty:function (str)
+    {
+        var args=str.split("=");
+        var name=args[0];
+        var value=args[1];
+        if(name==="readColor") {
+
+            $scope.setting.readColor = parseInt(str);
+            $scope.setting.readClass = "color" + color;
+        }
+
+        if(name==="readSize")
+        {
+            $scope.setting.readSize=parseInt(str);
+        }
+
+        if(name==="downCount")
+        {
+            $scope.setting.downCount=parseInt(str);
+        }
+        return true;
+    }
 }
 
 var device={height:0,width:0};
@@ -200,16 +234,3 @@ var position={x:0,y:0};
 function  callFunc(funcName,arg) {
     return  methodArray[funcName] && methodArray[funcName](arg);
 }
-$(document).ready(function()
-{
-    //$(".font-setting>div").on("mousedown touchstart",function(){
-     //   $(this).attr("class","btn-touch");
-
-
-   // }).on("mouseup touchend",function(){
-     //   $(this).attr("class","btn");
-
-   // });
-
-    //$(".setting").hide();
-})
